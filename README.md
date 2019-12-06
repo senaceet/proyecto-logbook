@@ -10,7 +10,7 @@ LogBook
 <br>
 <br>
 <h5> :pushpin: Objetivo general</h5>
-<p>Desarrollar un módulo web para usuarios, que permita gestionar los horarios de la sede Colombia.</p>
+<p>Desarrollar un aplicativo WEB para el módulo de gestión de usuarios del CEET para los instructores de la sede Colombia.</p>
 <h5> :dart: Objetivos especificos</h5>
 <ul>
     <li>Permitirle al administrador modificar, editar, crear y deshabilitar aprendices e instructores.</li>
