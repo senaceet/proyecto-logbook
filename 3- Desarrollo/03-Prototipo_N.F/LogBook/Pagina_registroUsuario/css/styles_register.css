@@ -1,0 +1,115 @@
+:root /*Sintaxis para usar las variables NO ESTAN IMPLEMENTADAS AÜN*/
+{
+    --color_menu: #48C9B0;
+    --color_fondo: black;
+    --color_principal: blue;
+    --color_secundario: yellow;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/*Estilos menú*/
+.menu{
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: black;
+}
+.menu-item{
+    padding: 0 50px;
+}
+.menu-link{
+    color:white;
+    font-family: 'Sulphur Point', 'serif';
+    font-size: 25px;
+    text-decoration: none;
+}
+/*Fin estilos menú*/
+/*Comienzo estilos del formulario*/
+.formulario{
+    width: 500px;
+    height: 750px;
+    /*background-color: hsla(277, 37%, 77%, 80% );*/
+    background-color: white;
+    box-shadow: 1px 1px 30px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    border-radius: 2%;
+}
+/*Titulo del formulario*/
+.h2{  
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    padding-top: 15px;
+    font-size: 2em;
+    font-family: 'Sulphur Point', serif;
+    color: black;
+}
+/*Inputs*/
+.campo{
+    padding: 20px;
+    width: 70%;
+    font-family: 'Sulphur Point', 'serif';
+    border-bottom: 1px solid #0BD0FF;
+}
+/*Más especifico con los determinados inputs*/
+.correo{
+    font-family: 'Sulphur Point', 'serif';
+    width: 70%;
+}
+/*"Input" desplegable*/
+.select{ 
+    font-family: 'Sulphur Point', 'serif';
+    padding: 15px;
+    width: 70%;
+    border: none;
+    background-color: hsla(204, 62%, 40%, 25%);
+}
+/*Botón para ingresar*/
+.submit{
+        padding: 15px;
+        width: 30%;
+    font-family: 'Sulphur Point', 'serif';
+}
+.submit:hover{
+    transition: 0.8s;
+    background: #0BD0FF; 
+}
+/*Parrafo con el link crear cuenta*/
+.registrarse{
+    padding-bottom: 10px;
+    font-family: 'Sulphur Point', 'serif';
+}
+/*Link para crear cuenta*/
+.link-for{
+    text-decoration: none;
+    color: black;
+}
+.link-for:hover{
+    text-decoration: underline;
+    color: #0BD0FF;
+}
+/*Fin estilos formulario*/
+/*Estilos del footer*/
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: hsla(204, 62%, 40%, 60%);
+    /*background-color: #0BD0FF;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.p-footer{
+    font-family: 'Sulphur Point', 'serif'
+}
