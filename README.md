@@ -27,7 +27,7 @@ LogBook
 </ul>
 <h5> :wrench: Planteamiento del problema.</h5>
 <p>
-    Debido a que la información de los miembros del Sena es algo muy valioso buscamos una forma en la cual cuidar todos esos datos valiosos, ya que esta información es propensa a ser dañada.
+    Debido a que la información de los miembros del Sena es algo muy valioso buscamos una forma en la cual cuidar todos esos datos importantes, ya que esta información es propensa a ser dañada.
    <br>
 En muchas ocasiones la información es almacenada de forma en la cual esta no se conserva de manera adecuada, lo cual genera deterioro.
     
