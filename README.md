@@ -6,11 +6,11 @@ LogBook
 <br>
 </h1>
 
-<h4 align="center">"Aprender no tiene horario ni fecha en el calendario, como la muerte."</h4>
+<h4 align="center">"Gestionando tu mundo."</h4>
 <br>
 <br>
 <h5> :pushpin: Objetivo general</h5>
-<p>Desarrollar un aplicativo WEB para el módulo de gestión de usuarios del CEET para los instructores de la sede Colombia.</p>
+<p>Desarrollar un módulo de gestión de usuarios del Sena CEET Colombia para los instructores de la sede.</p>
 <h5> :dart: Objetivos especificos</h5>
 <ul>
     <li>Permitirle al administrador modificar, editar, crear y deshabilitar aprendices e instructores.</li>
@@ -26,18 +26,15 @@ LogBook
     <li>Conceder permisos a cada uno de los usuarios del módulo.</li>
 </ul>
 <h5> :wrench: Planteamiento del problema.</h5>
-<p>Los horarios que se muestran en el blog Blogspot, cargados desde un link externo en drive, generan grandes 
-   confusiones a los aprendices nuevos, debido a que no existe un módulo web amigable he 
-   intuitivo que permita visaulizar esta información de manera clara y asertiva.
+<p>
+    Debido a que la información de los miembros del Sena es algo muy valioso buscamos una forma en la cual cuidar todos esos datos valiosos, ya que esta información es propensa a ser dañada.
    <br>
-   Los horarios se encuentran hechos en el software Excel lo cual; debido a una mala implementación pueden generar errores como, cruzar
-    los horarios de las fichas y de los instructores.
+En muchas ocasiones la información es almacenada de forma en la cual esta no se conserva de manera adecuada, lo cual genera deterioro.
+    
 </p>
 <h5> :pencil: Justificación.</h5>
 <p>
     Debido al déficit en el manejo de la información y manejo de usuarios del CEET de la sede Colombia, se optó por mejorar la forma en la que los aprendices e instructores consultan su información, creando un módulo web que gestione sus datos de una forma más optimizada y organizada.
-
-
 </p>
 <h5> :rocket: Alcance del proyecto.</h5>
 <p>
