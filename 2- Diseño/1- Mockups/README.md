@@ -1,1 +1,1 @@
-Fichero para que me agarre las carpetas "vacias"
+No aplican para TPS. 
