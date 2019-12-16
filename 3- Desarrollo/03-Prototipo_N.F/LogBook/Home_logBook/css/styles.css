@@ -4,124 +4,97 @@
     bottom: 0;
     border: 0;
 }
+/*Estilos para todo el documenento*/
 body{
     min-height: 1000px;
     font-family: 'Sulphur Point', 'serif';
 }
+/*Estilos principales del menú lateral*/
 .menu{
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 20px 20px;
+    background-color: black;
 }
-.menu-item{
-    padding: 20px 30px;
-    background-color: #74BDE8;
-    margin-bottom: 20px;
+/*Estilos de los links del menú*/
+.menu-link{
+    color: blanchedalmond;
+    text-decoration: none;
 }
-.menu-item:hover .menu-link{
-    transition: 0.8s;
-    background-color: #8CB6FF;
+/*Div que contiene la primera imagen que el usuario ve*/
+.facilidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/mujer.jpg);
+    background-size: 100% 100%;
+}
+/*Titulo de la imagen*/
+.h1{
+    margin-top: 60px;
+}
+/*Texto de abajo de la imagen*/
+.descripcion-felicidad{
+    font-size: 1.5em;
+    margin-bottom: 10px;
     color: white;
 }
-.menu-link{
-    text-decoration: none;
-}
-.lateral-izquierda{
-    width: 40%;
-    height: 100%;
-    background-image: url(../img/otropc.jpg);
-    background-size: 100% 100%;
+/*Barras  que contienen los titulos de cada sección*/
+.barra-lateral{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column-reverse;
-
-}
-.parrafo-frase{
-    margin: 50px 0;
-    color: steelblue;
-    font-size: 4rem;
-}
-.lateral-derecha{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    height: 100%;
-    background-image: url(../img/pc.jpg);
-    background-size: 100% 100%;
-}
-h1{
-    color: steelblue;
-    font-size: 40rem;
-}
-.banner{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
     width: 100%;
-    height: 500px;
-    background-color: blueviolet;
+    height: 80px;
+    background-color: #D5DBDB;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-h2{
-    margin: 40px 0;
-    text-align: center;
+/*Descripciones de las secciones*/
+.h2-descripcion{
+    display: flex;
+    justify-content: center;
 }
-.banner-lateral{
-    width: 50%;
-    height: 500px;
-    background-color: black;
-    float: right;
-    margin-bottom: 50px;
-}
-
-.caracteristicas{
-    margin-top: 300px;
-    float: right;
-}
+/*Contenedor de las caracterìsticas*/
 .section{
-    width: 100%;
-    height: 300px; 
-    margin-bottom: 50px;
-    border: 2px solid green;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    justify-content: space-between;
+    height: 500px;
+    width: 100%;
+    background-color: wheat;
 }
+/*Cajas contenedoras de características*/
 .section-item{
+    height: 46%;
     width: 46%;
-    height: 250px;
-    margin: 10px;
-    background-color: greenyellow;
+    background-color: turquoise;
 }
-.footer{
-    background-color: coral;
+.section-logo{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    height: 200px;
+    height: 500px;
     width: 100%;
-
+    background-color: wheat;
 }
-.power{
+/*Contenedor con las imagenes de los "clienetes del proyecto"*/
+.image-logo{
+background-color: violet;
+height: 45%;
+width: 35%;
+}
+.boton{
+    padding: 30px;
+    background-color: turquoise;
+    margin: 50px 0;
     position: relative;
-    top: 70px;
-    left: 675px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.code{
-    float: left;
-}
-.logo{
-    width: 50px;
-    height: 50px;
-}
-.link-logo{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 46%;
 }
