@@ -6,7 +6,7 @@ LogBook
 <br />
 </h1>
 
-<h2 align="center">"Gestionando tu mundo."</h2>
+<h2 align="center">"Gestiona el mundo con un solo click. :earth_americas:"</h2>
 <br />
 <br />
 <h3> :pushpin: Objetivo general</h3>
