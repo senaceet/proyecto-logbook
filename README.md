@@ -5,7 +5,19 @@ LogBook
 <br />
 <br />
 </h1>
-<h2 align="center"><a href="./src/Home_logBook/index.html"><img src="./3- Desarrollo/03-Prototipo_N.F/img-readme/version.PNG" alt="Versión del sistema" width="72" height="20"></a> <a href="./src/Home_logBook/index.html"><img src="./3- Desarrollo/03-Prototipo_N.F/img-readme/stars.PNG" alt="Estrellas del proyecto" width="72" height="20"></a></h2>
+<p align="center" >
+<!-- stars -->
+
+[![GitHub stars](https://img.shields.io/github/stars/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook/stargazers)
+
+<!-- forks -->
+[![GitHub forks](https://img.shields.io/github/forks/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook/network)
+
+<!-- license -->
+[![GitHub license](https://img.shields.io/github/license/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook)
+
+
+</p>
 
 <h2 align="center">"Gestiona el mundo con un solo click. :earth_americas:"</h2>
 <br />
