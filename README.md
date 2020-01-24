@@ -1,11 +1,16 @@
 <h1 align="center">
-<a href="./src/Home_logBook/index.html"><img src="./3- Desarrollo/03-Prototipo_N.F/img-readme/user.png" alt="User image" width="300" height="300"></a>
-<br />
-LogBook
-<br />
-<br />
+    <a href="./src/Home_logBook/index.html"><img src="./3- Desarrollo/03-Prototipo_N.F/img-readme/user.png" alt="User image" width="300" height="300"></a>
+    <!--Tittle-->
+    <br />
+    LogBook
+    <br />
 </h1>
-<p align="center" >
+<br />
+<!--Shield zone
+NO TOCAR SI NO SABEN CÓMO FUNCIONA, O TODO SE VA AL CARAJO COMO ME HA PASADO ÚLTIMAMENTE xd
+-->
+<p align="center">
+
 <!-- stars -->
 [![GitHub stars](https://img.shields.io/github/stars/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook/stargazers)
 
@@ -13,7 +18,7 @@ LogBook
 [![GitHub forks](https://img.shields.io/github/forks/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook/network)
 
 <!--Tag version-->
-![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/senaceet/proyecto-logbook)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/senaceet/proyecto-logbook?style=for-the-badge)
 
 <!--commit activity per month-->
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/senaceet/proyecto-logbook?style=for-the-badge)
@@ -27,10 +32,11 @@ LogBook
 <!-- license -->
 [![GitHub license](https://img.shields.io/github/license/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook)
 </p>
-
+<!--phrase-->
 <h2 align="center">"Gestiona el mundo con un solo click. :earth_americas:"</h2>
 <br />
 <br />
+<!--Objetives-->
 <h3> :pushpin: Objetivo general</h3>
 <p>Desarrollar un módulo para gestionar usuarios para el sistema de información de horarios del Sena CEET de la
 sede Colombia.</p>
