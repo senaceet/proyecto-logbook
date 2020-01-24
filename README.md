@@ -10,17 +10,29 @@
 NO TOCAR SI NO SABEN CÓMO FUNCIONA, O TODO SE VA AL CARAJO COMO ME HA PASADO ÚLTIMAMENTE xd
 -->
 <p align="center">
-
-
-[![GitHub stars](https://img.shields.io/github/stars/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook/stargazers) [![GitHub forks](https://img.shields.io/github/forks/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook/network) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/senaceet/proyecto-logbook?style=for-the-badge) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/senaceet/proyecto-logbook?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/senaceet/proyecto-logbook?style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/senaceet/proyecto-logbook?style=for-the-badge) [![GitHub license](https://img.shields.io/github/license/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook)
+  <a href="#">
+    <img src="https://img.shields.io/badge/LICENCE-NOT%20SPECIFIED-blue" alt="licence"> <!--Shield licence-->
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/HTML-51.8%25-blue" alt="porcent html"> <!--Shield porcent html-->
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/REPO%20SIZE-25.9%20MB-blue" alt="Repo-size"> <!--Shield repo-size-->
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/COMMIT%20ACTIVITY-6%2FMONTH-blue" alt="COMMIT ACTIVITY"> <!--Shield commit activity-->
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/STARS-3-blue" alt="stars"> <!--Shield stars-->
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/FORKS-1-blue" alt="forks"> <!--Shield forks-->
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/TAG-V0.3-blue" alt="tag"> <!--Shield tag-->
+  </a>
 </p>
-
-
-
-
-
-
-<h2 align="center">"Gestiona el mundo con un solo click. :earth_americas:"</h2>
+<h2 align="center">"Gestiona el mundo con un solo click. :earth_americas:"</h2> 
 <br />
 <br />
 <!--Objetives-->
