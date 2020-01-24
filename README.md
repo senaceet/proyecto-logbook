@@ -11,28 +11,15 @@ NO TOCAR SI NO SABEN CÓMO FUNCIONA, O TODO SE VA AL CARAJO COMO ME HA PASADO Ú
 -->
 <p align="center">
 
-<!-- stars -->
-[![GitHub stars](https://img.shields.io/github/stars/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook/stargazers)
 
-<!-- forks -->
-[![GitHub forks](https://img.shields.io/github/forks/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook/network)
-
-<!--Tag version-->
-![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/senaceet/proyecto-logbook?style=for-the-badge)
-
-<!--commit activity per month-->
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/senaceet/proyecto-logbook?style=for-the-badge)
-
-<!--repo size-->
-![GitHub repo size](https://img.shields.io/github/repo-size/senaceet/proyecto-logbook?style=for-the-badge)
-
-<!--top lenguaje-->
-![GitHub top language](https://img.shields.io/github/languages/top/senaceet/proyecto-logbook?style=for-the-badge)
-
-<!-- license -->
-[![GitHub license](https://img.shields.io/github/license/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook)
+[![GitHub stars](https://img.shields.io/github/stars/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook/stargazers) [![GitHub forks](https://img.shields.io/github/forks/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook/network) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/senaceet/proyecto-logbook?style=for-the-badge) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/senaceet/proyecto-logbook?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/senaceet/proyecto-logbook?style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/senaceet/proyecto-logbook?style=for-the-badge) [![GitHub license](https://img.shields.io/github/license/senaceet/proyecto-logbook?style=for-the-badge)](https://github.com/senaceet/proyecto-logbook)
 </p>
-<!--phrase-->
+
+
+
+
+
+
 <h2 align="center">"Gestiona el mundo con un solo click. :earth_americas:"</h2>
 <br />
 <br />
