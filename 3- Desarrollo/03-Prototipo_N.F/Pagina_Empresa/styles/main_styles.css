@@ -1,294 +1,271 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-/*Variables css*/
-:root{
-    --height: heigth: 800px;
-    --width: width:100%;
-}
-body{
-    background-color: #181A1A;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 /*Inicio estilos para el menú horizontal*/
-
-.menu{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    background: black;
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background: black;
 }
-.sub-menu{
-    /* Por cascada anula el display flex, así estos se ponen uno sobre otro */
-    display: block; 
-    position: absolute;
-                         /* Para que salga del flujo */
-    left: 1%;   /*Para mover los items de las banderas y que queden alineadas con el item "idioma "*/
-    top: 100%; /*De su referencia, se empuja un 100% del padre*/
-    display: none;
+.sub-menu {
+  /* Por cascada anula el display flex, así estos se ponen uno sobre otro */
+  display: block;
+  position: absolute;
+  /* Para que salga del flujo */
+  left: 1%;
+  /*Para mover los items de las banderas y que queden alineadas con el item "idioma "*/
+  top: 100%;
+  /*De su referencia, se empuja un 100% del padre*/
+  display: none;
 }
-.sub-item:hover .sub-menu{
-    /* Cuando se haga hover en el item del menú. el submenú será el que aparezca*/
-    display: block;
+.sub-item:hover .sub-menu {
+  /* Cuando se haga hover en el item del menú. el submenú será el que aparezca*/
+  display: block;
 }
-.sub-item{
-    position: relative; /*Para que se use de referencia*/
+.sub-item {
+  position: relative;
+  /*Para que se use de referencia*/
 }
-.sub-item:hover{
-    background-color: rgba(54, 52, 52, 0.5);
+.sub-item:hover {
+  background-color: rgba(54, 52, 52, 0.5);
 }
-.menu-link{
-    text-decoration: none;
-    color: white;
-    font-size: 1.5em;
-    display: block;
-    padding: 30px 50px;
+.menu-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  display: block;
+  padding: 30px 50px;
 }
-.banderas{
-    padding:20px 30px;
+.banderas {
+  padding: 20px 30px;
 }
-.russia{
-    width: 100px;
-    height: 90px;
+.russia {
+  width: 100px;
+  height: 90px;
 }
-.inglesa{
-    width: 100px;
-    height: 44px;
+.inglesa {
+  width: 100px;
+  height: 44px;
 }
-/*Fin menú horizontal*/
-
-
-
-h1{
-    padding: 0 80px 0 0;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  background-color: #181A1A;
 }
-h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    height: 100px;
-    padding: 200px;
-    
+h1 {
+  padding: 0 80px 0 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-[class^="par"]{/*Parrafos*/
-    width: 50%;
-    height: 50px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100px;
+  padding: 200px;
 }
-#proyectos{
-    padding: 90px;
-    width: auto;
+[class^="par"] {
+  /*Parrafos*/
+  width: 50%;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#servicios{
-    position: relative;
-    top: 200px;
-}
-#otros-s{
-    margin-top: 150px;
-    padding: 80px 0;
-}
-#parallax{ /*Contaiener que contiene :v las fotos del collage*/
-    width: auto;
-}
-#comentarios-s
-{
-    width: auto;
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.parallax-1{
-    background-image: url(../img/technology.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    height: 500px;
-    float: left;
-}
-.parallax-2{
-    background-image: url(../img/work.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    height: 500px;
-    position: relative;
-    top: 450px;
-}
-.parallax-3{
-    background-image: url(../img/team.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    height: 500px;
-    margin-top: 140px;
-}
-.parallax-4{ /*Colloage de imagenes*/
-    height: 500px;
-    align-items: center;
-    border: 2px solid lightblue;
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-[class^="collage-"]{
-    background-color: blue;
-    height: 50%;
-    width: 46%;
-    flex: auto;
-}
-.collage-1{
-    background-image: url(../img/phone.jpg);
-    background-size: 100% 100%;
-}
-.collage-2{
-    background-image: url(../img/code.jpg);
-    background-size: 100% 100%;
-}
-.collage-3{
-    background-image: url(../img/computer.jpg);
-    background-size: 100% 100%;
-}
-.collage-4{
-    background-image: url(../img/mobile.png);
-    background-size: 100% 100%;
-}
-.comentarios{
-    position: relative;
-    left: 70px;
-    width: 90%;
-    height: 500px;
-    background-color: rgb(255, 254, 254);
-    display: flex;
-}
-[class^="comentario-"]{
-    height: 500px;
-    margin: 0 10px;
-}
-[class^="image-"]{
-    background-color: red;
-    height: 100px;
-    width: 100px;
-    position: relative;
-    top: 10px;
-    left: 100px;
-}
-.comentario-1{
-    background-color: royalblue;
-}
-.image-1{
-    background-image: url(../img/persona-1.jpg);
-    background-size: 100% 100%;
-    border-radius: 100%;
-}
-
-.comentario-2{
-    background-color: coral;
-}
-.image-2{
-    background-image: url(../img/persona-2.jpg);
-    background-size: 100% 100%;
-    border-radius: 100%;
-
-}
-.comentario-3{
-    background-color: darkgoldenrod;
-}
-.image-3{
-    background-image: url(../img/persona-3.jpg);
-    background-size: 100% 100%;
-    border-radius: 100%;
-
-}
-.comentario-4{
-    background-color: darkgreen;
-}
-.image-4{
-    background-image: url(../img/persona-4.jpg);
-    background-size: 100% 100%;
-    border-radius: 100%;
-
-}
-
 /*Se da propiedades especificas a los "p" dentro de los divs de la sección de OPINIONES de la pagina web*/
-[class^="comentariop"]{
-    position: relative;
-    top: 200px;
-    text-align: center;
+[class^="comentariop"] {
+  position: relative;
+  top: 200px;
+  text-align: center;
 }
-.comentario-s{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.comentario-s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Comienzo de estilos de la sección de blog-noticias */
-.blog{
-    background-color: goldenrod;
-    height: 500px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.blog {
+  background-color: goldenrod;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.blog-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffff;
-    height: 250px;
-    width: 300px;
+.blog-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
+  height: 250px;
+  width: 300px;
 }
-/* Fin zona blog */
-/* Zona de estilos para el formulario  */
-.form{
-    padding: 40px 0;
-    height: 450px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+#proyectos {
+  padding: 90px;
+  width: auto;
 }
-h3{
-    color: white;
+#servicios {
+  position: relative;
+  top: 200px;
 }
-input{
-    background-color: #252525;
-    text-align: center;
-    padding: 15px 150px;
+#otros-s {
+  margin-top: 150px;
+  padding: 80px 0;
 }
-.submit{
-    background-color: red;
+#parallax {
+  /*Contaiener que contiene :v las fotos del collage*/
+  width: auto;
 }
-/* Fin zona de formulario */
-/*La etiqueta lo explica */
-footer
-{
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 100%;
-    background-color: #34495E;
-    text-align: center;
-    color: white;
+#comentarios-s {
+  width: auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.lista{
-    list-style: none;
+.parallax-1 {
+  background-image: url(https://ibb.co/68CrGjV);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+  float: left;
 }
-.link-footer{
-    text-decoration: none;
-    color: white;
+.parallax-2 {
+  background-image: url(https://ibb.co/YpjmztF);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  top: 450px;
+}
+.parallax-3 {
+  background-image: url(https://ibb.co/YNhDgqc);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+  margin-top: 140px;
+}
+.parallax-4 {
+  /*Colloage de imagenes*/
+  height: 500px;
+  align-items: center;
+  border: 2px solid lightblue;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+[class^="collage-"] {
+  background-color: blue;
+  height: 50%;
+  width: 46%;
+  flex: auto;
+}
+.collage-1 {
+  background-image: url(https://ibb.co/3FH87v1);
+  background-size: 100% 100%;
+}
+.collage-2 {
+  background-image: url(https://ibb.co/xmmwrvk);
+  background-size: 100% 100%;
+}
+.collage-3 {
+  background-image: url(https://ibb.co/g62762b);
+  background-size: 100% 100%;
+}
+.collage-4 {
+  background-image: url(https://ibb.co/DtpJDxJ);
+  background-size: 100% 100%;
+}
+.comentarios {
+  position: relative;
+  left: 70px;
+  width: 90%;
+  height: 500px;
+  background-color: #fffefe;
+  display: flex;
+}
+[class^="comentario-"] {
+  height: 500px;
+  margin: 0 10px;
+}
+[class^="image-"] {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 10px;
+  left: 100px;
+}
+.comentario-1 {
+  background-color: royalblue;
+}
+.image-1 {
+  background-image: url(https://ibb.co/3cM8HR4);
+  background-size: 100% 100%;
+  border-radius: 100%;
+}
+.comentario-2 {
+  background-color: coral;
+}
+.image-2 {
+  background-image: url(https://ibb.co/GkVqKtr);
+  background-size: 100% 100%;
+  border-radius: 100%;
+}
+.comentario-3 {
+  background-color: darkgoldenrod;
+}
+.image-3 {
+  background-image: url(https://ibb.co/mGYjj0y);
+  background-size: 100% 100%;
+  border-radius: 100%;
+}
+.comentario-4 {
+  background-color: darkgreen;
+}
+.image-4 {
+  background-image: url(https://ibb.co/3cM8HR4);
+  background-size: 100% 100%;
+  border-radius: 100%;
+}
+.form {
+  padding: 40px 0;
+  height: 450px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+input {
+  background-color: #252525;
+  text-align: center;
+  padding: 15px 150px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-color: #34495E;
+  text-align: center;
+  color: white;
+}
+.lista {
+  list-style: none;
+}
+.link-footer {
+  text-decoration: none;
+  color: white;
+}
+.submit {
+  background-color: red;
 }
