@@ -1,1 +1,0 @@
-Aquí se desarrolla la pagina estatica de LogBook para describir lo que hacemos aquí.
