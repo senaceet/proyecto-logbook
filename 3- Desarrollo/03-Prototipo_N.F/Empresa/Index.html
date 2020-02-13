@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="People soft code es un entorno donde podemos desarrollar el proyecto que tengas en mente."/> 
+    <!--Corregir descripción dce la enpresa-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><!--Colocar ico-->
+    <link rel="stylesheet" href="./styles/main_styles.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <title>People_soft(code);</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="menu">
+            <!-- Esta mal poner el h1 CORREGIR -->
+            <h1>People_soft(Code);</h1> 
+            <!--¡Corregir porque esta mal.-->
+            <li class="sub-item"><a class="menu-link" href="#servicios">Servicios</a></li>
+            <li class="sub-item"><a class="menu-link" href="#proyectos">Proyectos</a></li>
+            <li class="sub-item"><a class="menu-link" href="#blog">Blog</a></li>
+            <li class="sub-item"><a class="menu-link" href="#contacto">Contacto</a></li>
+            <li class="sub-item"><a class="menu-link" >Idioma</a>
+            <ul class="menu sub-menu">
+                <!-- Idiomas banderas -->
+                <li class="sub-item">
+                    <a class="menu-link banderas"href="./Index_rusian.html"><img class="bandera russia" src="./img/russia.png" alt="Bandera rusa"></a>
+                </li>
+                <li class="sub-item">
+                    <a class="menu-link banderas"href="#"><img class="bandera inglesa" src="./img/inglesa.jpg" alt="Bandera inglesa"></a>
+                </li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+    <h2 class="h2">
+        Espacio para poner un slogan super motivador.<!--Pendiente poner un video de background-->
+    </h2>
+    <div class="parallax-1">
+        <!-- Primera imagen -->
+    </div>
+    <p class="par" id="servicios">
+        Espacio para colocar los  servicios que se harán en la empresa con cositas y maricaditas.
+    </p>
+    <div class="parallax-2">
+        <!-- Segunda imgen -->
+    </div>
+    <p class="par" id="otros-s">
+        Espacio para más servicios y maricadas.
+    </p> 
+    <div class="parallax-3">
+        <!-- Tercera imgen -->
+    </div>
+    <p class="par" id="proyectos">
+        Algunos de nuestros proyectos realizados
+    </p>
+    <div class="parallax-4" id="parallax"><!--Collage de los proyectos hechos-->
+        <div class="collage-1"></div>
+        <div class="collage-2"></div>
+        <div class="collage-3"></div>
+        <div class="collage-4"></div>
+    </div>
+    <p class="par comentario-s" id="comentarios-s">
+        Comentarios a satisfaccion de nuestros clientes
+    </p>
+    <!-- Sección de comentarios -->
+    <section class="comentarios">
+        <article class="comentario-1">
+            <div class="image-1">
+            <!-- Imagen del cliente -->
+            </div>
+                <p class="comentariop">
+                    Anna Lucia
+                    <p class="name">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nesciunt veniam ea numquam alias praesentium est vitae, fugiat totam non nam maxime voluptatibus! Adipisci quam expedita, dignissimos quae doloribus maxime.
+                    </p>
+                    <p class="date">20/11/2019</p> 
+        </article>
+        <article class="comentario-2">
+            <div class="image-2">
+                <!-- Imagen 2 cliente -->
+            </div>
+                <p class="comentariop">
+                    Camila Buena 
+                    <p class="name">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nesciunt veniam ea numquam alias praesentium est vitae, fugiat totam non nam maxime voluptatibus! Adipisci quam expedita, dignissimos quae doloribus maxime.
+                    </p>
+                    <p class="date">29/04/2018</p> 
+        </article>
+        <!-- Fin 2do comentario -->
+        <article class="comentario-3">
+            <div class="image-3">
+                <!-- Imgaen cliente -->
+            </div>
+            <p class="name"> Andrés Andrade</p>
+            <p class="comentariop">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nesciunt veniam ea numquam alias praesentium est vitae, fugiat totam non nam maxime voluptatibus! Adipisci quam expedita, dignissimos quae doloribus maxime.</p> 
+            <p class="date">15/01/2011</p> 
+        </article>
+        <article class="comentario-4">
+            <div class="image-4">
+                <!-- Imagen cliente -->
+            </div>
+                <p class="comentariop">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nesciunt veniam ea numquam alias praesentium est vitae, fugiat totam non nam maxime voluptatibus! Adipisci quam expedita, dignissimos quae doloribus maxime.</p>
+                <p class="name">Daniel P.</p> 
+                <p class="date">09/11/2017</p> 
+        </article>
+    </section> 
+    <!-- Fin zona de comentarios -->
+    <!-- Zona de blog -->
+    <section class="blog" id="blog">
+        <article class="blog-item">Noticia 1</article>
+        <article class="blog-item">Noticia 2</article>
+        <article class="blog-item">Noticia 3</article>
+    </section>
+    <!-- Fin zona blog -->
+    <!-- Zona de formulario de contacto -->
+    <form class="form" action="" method="post">    
+        <h3 class="h3" id="contacto">¡Contactanos!</h3>
+        <input name="nombre" placeholder="Nombre"  required />
+        <input name="telefono" placeholder="Teléfono"   required />
+        <input name="ciudad" placeholder="Ciudad"  required />
+        <input name="correo" type="email" placeholder="Correo"  pattern="[a-z A-Z 1-9 ]+@" required />
+        <input name="mensaje"  placeholder="Mensaje"  required />
+        <input class="submit" type="submit" value="Enviar">
+    </form> 
+    <!-- Fin zona de formulario de contacto -->
+    <footer>
+        <ul class="lista">
+            <li class="items">Todos los derechos reservados ©2019</li>
+            <li class="items"><a class="link-footer"href="#">About us</a></li>
+            <li class="items"><a class="link-footer"href="#">Designers profiles</a></li>
+            <li class="items"><a class="link-footer"href="#">Terminos y condiciones.</a></li> 
+        </ul>
+    </footer>
+</body>
+</html>

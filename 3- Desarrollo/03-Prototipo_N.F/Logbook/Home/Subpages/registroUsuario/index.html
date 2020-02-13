@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Pagina para hacer el registro a la plataforma Log Book." />
+    <link rel="shortcut icon" href="./img/libreta.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles_register.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <title>Registro LB</title>
+</head>
+<!--Pagina para registrar a los usuarios -->
+<body>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item"><a class="menu-link" href="../Home_logBook/index.html">Inicio</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">Salir</a></li>
+            </ul>
+        </nav>
+            <form class="formulario" action="validacion.php" method="post">    
+                <h2 class="h2">Formulario de registro.</h2>
+                <input  class="campo" name="Primer_Nombre" placeholder="Primer nombre"  autofocus="autofocus" required />
+                <input  class="campo" name="Segundo_Nombre" placeholder="Segundo Nombre" />
+                <input  class="campo" name="Primero_Apellido"placeholder="Primer Apellido" required />        
+                <input  class="campo" name="Segundo_Apellido" placeholder="Segundo Apellido" />
+                    <select class="select" name="documento" required="required" >
+                        <option value="null">Tipo de documento</option>
+                        <option value="Cedula">Cédula</option>
+                        <option value="Tarjeta">Tarjeta de identidad</option>
+                        <option value="Cedula_e">Cédula de extranjeria</option>
+                    </select>
+                <input  class="campo" name="numero_documento"  placeholder="Número de documento" required />
+                <input  class="campo correo" name="correo" type="email" placeholder="Correo Mi Sena" required pattern="[a-z A-Z 1-9 ]+@[misena.edu.co]+" />
+                    <select class="select" name="Rol" placeholder="asdf">
+                        <option value="">Selecciona tu roll institucional</option>
+                        <option value="Aprendíz">Aprendíz</option>
+                        <option value="Instructor/a">Instructor/a</option>
+                        <option value="Coordinador/a">Coordinador/a</option>
+                    </select>
+                    <input class="submit" type="submit" value="Registrate">
+                <p class="registrarse">¿Ya tienes cuenta? <a class="link-for" href="../Pagina_IngresoHorarios/index.html">Click aquí.</a></p>
+            </form>
+    <footer class="footer">
+        <p class="p-footer  ">Todos los derechos reservados© 2019</p>
+    </footer>
+</body>
+</html>

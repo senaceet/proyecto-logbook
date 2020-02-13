@@ -1,0 +1,26 @@
+//Estilos que formatean todo
+@import "./base/_normalize.less";
+
+//Variables css
+@import "./utilities/_variables.less";
+*{
+    margin: @general_margin;
+    padding: @general_padding;
+    border: @general_border;
+    box-sizing: @box-sizing;
+}
+/*Inicio estilos para el menú horizontal*/
+@import "./layout/_navigation-bar.less";
+
+//Estilos de la página
+@import "./themes/general-styles.less";
+
+//Divs y contendo Pendiente por arreglar con verdadero grid
+@import "./layout/_grid.less";
+
+//Formulario
+@import "./layout/_forms.less";
+
+//Footer
+@import "./layout/_footer.less";
+@import "./componets/_buttons.less";

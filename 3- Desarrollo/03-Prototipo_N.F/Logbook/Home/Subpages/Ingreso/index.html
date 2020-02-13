@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./img/libreta.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles_login.css">
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <title>Logbook ingreso</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu-item"><a class="menu-link" href="../Home_logBook/index.html">Inicio</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">Salir</a></li>
+            </ul>
+        </nav>
+   </header>
+   <!--Corregir los enlaces a las otras paginas aún no esta realizado-->
+        <form class="formulario" action="validacion.php" method="POST">
+            <h3 class="h3">Logbook Ingreso.</h3>
+            <input class="campo" name="usser" placeholder="Usuario o Imail."  required />
+            <input class="campo" name="password" type="password" placeholder="Contraseña" required />
+            <input class="campo submit" type="submit" value="Ingresar" />
+            <p class="texto"><a class="p-link" href="#">¿Olvidaste tu contraseña?</a></p>
+            <p class="texto">¿Eres nuevo?<a class="p-link" href="../Pagina_registroUsuario/index.html">Ingresa aquí</a></p>
+        </form>
+        <footer class="footer">
+            <p class="p-footer ">Todos los derechos reservados© 2019</p>
+        </footer>
+</body>
+</html>
