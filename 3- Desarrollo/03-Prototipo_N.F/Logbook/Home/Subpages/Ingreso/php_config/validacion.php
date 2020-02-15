@@ -2,7 +2,7 @@
 
 $error = "Los datos no coinciden.";
 
-if (!empty($_POST['user']) && (!empty($_POST['password']))){
+if (!empty($_POST['user']) || (!empty($_POST['password']))){
 
     $error = false;
     $user_mail= $_POST['user'];
