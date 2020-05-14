@@ -61,19 +61,6 @@ ALTER TABLE LogBook.persona ADD CONSTRAINT fkIdRh            FOREIGN KEY (fk_id_
 ALTER TABLE LogBook.persona ADD CONSTRAINT fkIdRol           FOREIGN KEY (fk_id_rol ) REFERENCES LogBook.rol (id_rol) ON UPDATE CASCADE;
 ALTER TABLE LogBook.persona ADD CONSTRAINT fkIdTipoDocumento FOREIGN KEY (fk_id_tipo_documento ) REFERENCES LogBook.tipo_documento (id_tipo_documento) ON UPDATE CASCADE;
 
-CREATE TABLE LogBook.administrador(
-id_rh                INT NOT NULL,
-fk_id_tipo_documento INT NOT NULL,
-fk_numero_documento  VARCHAR(20) NOT NULL);
-ALTER TABLE LogBook.administrador ADD CONSTRAINT fk1IdTipoDocumento FOREIGN KEY (fk_id_tipo_documento, fk_numero_documento)  REFERENCES LogBook.persona (fk_id_tipo_documento,numero_documento) ON UPDATE CASCADE;
-ALTER TABLE LogBook.administrador ADD PRIMARY KEY(id_rh,fk_id_tipo_documento,fk_numero_documento);
-
-CREATE TABLE LogBook.aprendiz(
-fk_id_tipo_documento INT NOT NULL,
-fk_numero_documento  VARCHAR(20) NOT NULL);
-ALTER TABLE LogBook.aprendiz ADD CONSTRAINT fk3IdTipoDocumento FOREIGN KEY (fk_id_tipo_documento, fk_numero_documento )  REFERENCES LogBook.persona (fk_id_tipo_documento, numero_documento)  ON UPDATE CASCADE;
-ALTER TABLE LogBook.aprendiz ADD PRIMARY KEY(fk_id_tipo_documento,fk_numero_documento);
-
 CREATE TABLE LogBook.instructor(
 fk_id_tipo_documento INT NOT NULL,
 fk_numero_documento  VARCHAR(20) NOT NULL,
