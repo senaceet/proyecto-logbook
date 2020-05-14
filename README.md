@@ -49,9 +49,10 @@ sede Colombia.</p>
     <br />
     <p>Tipos de usuarios: </p>
         <ul>
-            <li>Administrador.</li>
-            <li>Instructor.</li>
-            <li>Aprendiz.</li>
+            <li>Administradores.</li>
+            <li>Instructores.</li>
+            <li>Aprendices.</li>
+            <li>Administrativos.</li>
         </ul>
     </li>
     <li>Generar la posibilidad que permita observar la disponibilidad del instructor para dictar clases en la sede.</li>
