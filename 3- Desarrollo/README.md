@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="./src/Home_logBook/index.html"><img src="./Otros/01- img README/user.png" alt="User image" width="300" height="300"></a>
+    <a href="./src/Home_logBook/index.html"><img src="../Otros/01- img README/user.png" alt="User image" width="300" height="300"></a>
     <!--Tittle-->
     <br />
     LogBook
