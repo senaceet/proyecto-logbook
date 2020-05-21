@@ -98,6 +98,8 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer--contenedor-logbook {
@@ -108,7 +110,7 @@ body {
   margin-left: 32px;
   letter-spacing: 8px;
   color: #43425d;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .footer--contenedor__iconos {
@@ -120,7 +122,7 @@ body {
 .footer-iconos a {
   padding: 20px;
   margin: 5px;
-  font-size: 30px;
+  font-size: 23px;
   color: #fff;
 }
 
@@ -130,34 +132,47 @@ body {
   color: #fff;
   border-left: 1px solid #fff;
 }
-.footer-titulo
-{
-  color: #fff;
-  font-size: 17px;
-}
+
 .footer-contactenos {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .footer--contactenos__titulo {
   display: flex;
   align-items: center;
-  margin-left: 20px;
+}
+
+.h2--titulo {
+  font-size: 15px;
+  margin-left: 60px;
 }
 
 .footer-contactenos a {
   color: #fff;
-  display: block;
   font-size: 17px;
-  padding: 5px;
-  margin: 5px;
+  padding: 1px;
+  margin: 3px;
   text-decoration: none;
+  align-self: flex-end;
+  margin-right: 20px;
+  border: 0.5px solid transparent;
 }
 
+.footer-iconos a:hover {
+  color: #fff;
+  border-radius: 100%;
+  border: 0.5px solid #fff;
+}
 
+.icon-mobile {
+  margin-right: 51px;
+}
 
-
+.icon-laptop {
+  margin-right: 37px;
+}
 
 /*---------------------------------------------------------RESPONSIVE DESIGN-------------------------------------------------------*/
 @media screen and (max-width: 780px) {
