@@ -25,6 +25,7 @@ USE LogBook;
 DROP TABLE IF EXISTS `administrador`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
+
 CREATE TABLE `administrador` (
   `fk_numero_documento` varchar(20) NOT NULL,
   `fk_id_tipo_documento` int(11) NOT NULL,
@@ -270,7 +271,7 @@ DROP TABLE IF EXISTS `log_error`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `log_error` (
   `id_error` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre_error` varchar(50) NOT NULL,
+  `nombre_error` varchar(100) NOT NULL,
   `fecha_error` date NOT NULL,
   `hora_error` time(6) NOT NULL,
   PRIMARY KEY (`id_error`)
@@ -504,8 +505,8 @@ CREATE TABLE `usuario` (
   `correo_electronico` varchar(100) NOT NULL,
   `foto` blob NOT NULL,
   `edad` int(11) NOT NULL,
-  `telefono_usuario` int(11) NOT NULL,
-  `contraseña` varchar(20) NOT NULL,
+  `telefono_usuario` varchar(11) NOT NULL,
+  `contraseña` varchar(40) NOT NULL,
   `fk_id_tipo_documento` int(11) NOT NULL,
   `fk_id_rh` int(11) NOT NULL,
   `fk_id_rol` int(11) NOT NULL,
