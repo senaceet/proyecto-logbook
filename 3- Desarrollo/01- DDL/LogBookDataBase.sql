@@ -223,7 +223,8 @@ CREATE TABLE `instructor_ficha` (
   `fk_numero_documento` varchar(20) NOT NULL,
   PRIMARY KEY (`fk_id_ficha`,`fk_id_tipo_documento`,`fk_numero_documento`),
   KEY `fk_id_tipo_documento` (`fk_id_tipo_documento`,`fk_numero_documento`),
-  CONSTRAINT `instructor_ficha_ibfk_1` FOREIGN KEY (`fk_id_tipo_documento`, `fk_numero_documento`) REFERENCES `instructor` (`fk_id_tipo_documento`, `fk_numero_documento`) ON UPDATE CASCADE
+  CONSTRAINT `instructor_ficha_ibfk_1` FOREIGN KEY (`fk_id_tipo_documento`, `fk_numero_documento`) REFERENCES `instructor` (`fk_id_tipo_documento`, `fk_numero_documento`) ON UPDATE CASCADE,
+  CONSTRAINT `instructor_ficha_ibfk_2` FOREIGN KEY (`fk_id_ficha`) REFERENCES `ficha`(`id_ficha`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
