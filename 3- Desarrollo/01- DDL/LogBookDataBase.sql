@@ -102,7 +102,7 @@ DROP TABLE IF EXISTS `competencia`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `competencia` (
   `id_competencia` int(11) NOT NULL AUTO_INCREMENT,
-  `descripcion_competencia` text DEFAULT NULL,
+  `descripcion_competencia` text NOT  NULL,
   `fk_id_programa` int(11) NOT NULL,
   `fk_id_especialidad` int(11) NOT NULL,
   PRIMARY KEY (`id_competencia`,`fk_id_programa`,`fk_id_especialidad`),
@@ -153,7 +153,7 @@ DROP TABLE IF EXISTS `ficha`;
 CREATE TABLE `ficha` (
   `id_ficha` int(11) NOT NULL AUTO_INCREMENT,
   `numero_ficha` int(11) NOT NULL,
-  `estado_ficha` varchar(10) DEFAULT NULL,
+  `estado_ficha` varchar(10) NOT NULL,
   `fk_id_programa` int(11) NOT NULL,
   `fk_id_especialidad` int(11) NOT NULL,
   `fk_id_jornada` int(11) NOT NULL,
@@ -223,7 +223,8 @@ CREATE TABLE `instructor_ficha` (
   `fk_numero_documento` varchar(20) NOT NULL,
   PRIMARY KEY (`fk_id_ficha`,`fk_id_tipo_documento`,`fk_numero_documento`),
   KEY `fk_id_tipo_documento` (`fk_id_tipo_documento`,`fk_numero_documento`),
-  CONSTRAINT `instructor_ficha_ibfk_1` FOREIGN KEY (`fk_id_tipo_documento`, `fk_numero_documento`) REFERENCES `instructor` (`fk_id_tipo_documento`, `fk_numero_documento`) ON UPDATE CASCADE
+  CONSTRAINT `instructor_ficha_ibfk_1` FOREIGN KEY (`fk_id_tipo_documento`, `fk_numero_documento`) REFERENCES `instructor` (`fk_id_tipo_documento`, `fk_numero_documento`) ON UPDATE CASCADE,
+  CONSTRAINT `instructor_ficha_ibfk_2` FOREIGN KEY (`fk_id_ficha`) REFERENCES `ficha`(`id_ficha`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -245,8 +246,8 @@ DROP TABLE IF EXISTS `jornada`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `jornada` (
   `id_jornada` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre_jornada` varchar(30) DEFAULT NULL,
-  `horario_jornada` varchar(30) DEFAULT NULL,
+  `nombre_jornada` varchar(30) NOT NULL,
+  `horario_jornada` varchar(30) NOT NULL,
   PRIMARY KEY (`id_jornada`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -271,7 +272,7 @@ CREATE TABLE `log_error` (
   `id_error` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_error` varchar(50) NOT NULL,
   `fecha_error` date NOT NULL,
-  `hora_error` time(6) DEFAULT NULL,
+  `hora_error` time(6) NOT NULL,
   PRIMARY KEY (`id_error`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -352,7 +353,7 @@ DROP TABLE IF EXISTS `resultado_aprendizaje`;
 CREATE TABLE `resultado_aprendizaje` (
   `id_resultado_aprendizaje` int(11) NOT NULL AUTO_INCREMENT,
   `numero_resultado_de_aprendizaje` int(11) NOT NULL,
-  `descripcion_resultado_aprendizaje` text DEFAULT NULL,
+  `descripcion_resultado_aprendizaje` text NOT NULL,
   `fk_id_competencia` int(11) NOT NULL,
   `fk_id_programa` int(11) NOT NULL,
   `fk_id_especialidad` int(11) NOT NULL,
@@ -450,7 +451,7 @@ DROP TABLE IF EXISTS `tipo_documento`;
 CREATE TABLE `tipo_documento` (
   `id_tipo_documento` int(11) NOT NULL AUTO_INCREMENT,
   `siglas` varchar(10) NOT NULL,
-  `nombre_tipo_documento` varchar(30) DEFAULT NULL,
+  `nombre_tipo_documento` varchar(30) NOT  NULL,
   PRIMARY KEY (`id_tipo_documento`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
