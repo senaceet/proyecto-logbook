@@ -505,7 +505,7 @@ CREATE TABLE `usuario` (
   `correo_electronico` varchar(100) NOT NULL,
   `foto` blob NOT NULL,
   `edad` int(11) NOT NULL,
-  `telefono_usuario` varchar(11) NOT NULL,
+  `telefono_usuario` varchar(15) NOT NULL,
   `contraseña` varchar(40) NOT NULL,
   `fk_id_tipo_documento` int(11) NOT NULL,
   `fk_id_rh` int(11) NOT NULL,
