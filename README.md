@@ -14,13 +14,13 @@ NO TOCAR SI NO SABEN CÓMO FUNCIONA, O TODO SE VA AL CARAJO COMO ME HA PASADO Ú
     <img src="https://img.shields.io/badge/LICENCE-NOT%20SPECIFIED-blue" alt="licence"> <!--Shield licence-->
   </a>
   <a href="#">
-    <img src="https://img.shields.io/badge/HTML-51.8%25-blue" alt="porcent html"> <!--Shield porcent html-->
+    <img src="https://img.shields.io/badge/HTML5-2.4%25-blue" alt="porcent html"> <!--Shield porcent html-->
   </a>
   <a href="#">
-    <img src="https://img.shields.io/badge/REPO%20SIZE-25.9%20MB-blue" alt="Repo-size"> <!--Shield repo-size-->
+    <img src="https://img.shields.io/badge/REPO%20SIZE-90.1%20MB-blue" alt="Repo-size"> <!--Shield repo-size-->
   </a>
   <a href="#">
-    <img src="https://img.shields.io/badge/COMMIT%20ACTIVITY-6%2FMONTH-blue" alt="COMMIT ACTIVITY"> <!--Shield commit activity-->
+    <img src="https://img.shields.io/badge/COMMIT%20ACTIVITY-30%2FMONTH-blue" alt="COMMIT ACTIVITY"> <!--Shield commit activity-->
   </a>
   <a href="#">
     <img src="https://img.shields.io/badge/STARS-3-blue" alt="stars"> <!--Shield stars-->
