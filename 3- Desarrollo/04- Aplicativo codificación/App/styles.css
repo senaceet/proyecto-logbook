@@ -7,23 +7,59 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border: 0px none #ffffff;
+  border-radius: 96px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7018c9;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #aa42ff;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 77px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track:active {
+  background: #e3c7ff;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 body
 {
     height: 100%;
     background-color: #F2F2F2;
 }
-svg{
+svg
+{
     height: 15px;
     width: 15px;
     padding-right: 2px;
 }
-a{
+a
+{
     text-decoration: none;
 }
-ul li {
+ul li
+{
     list-style: none;
 }
-
 .nav--container
 {
     display: flex;
@@ -40,12 +76,11 @@ ul li {
     display: flex;
     align-items: center;
     background-color: #0000001A;
-    width: 5%;
+    width: 30%;
     height: 50px;
 }
 .p--logo
 {
-    display: none;
     font-weight: bold;
     margin-left: 20px;
     letter-spacing: 5px;
@@ -53,11 +88,13 @@ ul li {
     color: white;
 }
 /*Menú horizontal*/
-.ul--menu--1{
+.ul--menu--1
+{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    width: 95%;
+    flex-wrap: wrap;
+    width: 70%;
     padding-right: 50px;
     background-color: #ffffff;
     box-shadow: 0px 2px 6px #0000000A;
@@ -77,18 +114,25 @@ ul li {
 .div--row
 {
     margin-left: 10px;
+    margin-bottom: 7px;
     background-color: #A4AFB7;
     height: 20px;
     width: 20px;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 55% 99%, 82% 50%, 55% 0);
     transform: rotate(90deg)
 }
+.li--itemSvg
+{
+    margin-right: 50px;
+}
+
 
 .ul--menu--dropDown
 {
     position: absolute;
     right: 50px;
     clip-path: polygon(64% 0, 72% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%, 55% 10%);
+    box-shadow: 12px 13px 7px -2px rgba(0,0,0,0.50);
     margin-top: 15px;
     display: flex;
     flex-direction: column;
@@ -112,7 +156,7 @@ ul li {
 }
 .a--userName:hover .div--row{
     transform: rotate(-90deg);
-    margin-top: 10px;
+    margin-top: 18px;
 }
 
 .ul--menu--dropDown
@@ -127,30 +171,34 @@ ul li {
 {
     border-bottom: 1px solid #F1F1F3;
 }
+.input--seach{
+    margin-right: 200px;
+    font-size: 20px;
+    height: 30px;
+    border-bottom: 1px solid #EBEBF2;
+}
 
 /*Dash board-----------*/
 .ul--menu--2
 {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 5%;
     min-height: 100vh;
     max-height: 100vh;
+    width: 30%;
     background-color: #545087;
     overflow-y: auto;
 }
 .li--item
-{
+{   
     display: flex;
     align-items: center;
+    padding-left: 50px;
     height: 100px;
     width: 100%;
 }
 .li--item:hover
 {
+    padding-left: 80px;
     border-left: 5px solid #A3A0FB;
     background-color: #0000001A;
 }
@@ -159,22 +207,27 @@ ul li {
     font-size: 20px;
     color: #ffffff;
 }
-/*Filtro*/
 
+/*Filtro*/
 .p--indicadorFilter
 {
     color: #A5A4BF;
     margin: 10px 0;
 }
 
-.div--optionsContainer{
+.div--optionsContainer
+{
     display: flex;
     align-items: center;
-    justify-content: space-around;
     height: 55px;
-    width: 390px;
+    width: 380px;
     background-color: #ffffff;
     border-radius: 20px;
+}
+.div--buttonsContainer
+{
+    display: flex;
+    justify-content: space-around;
 }
 .button--option,.select--button
 {
@@ -185,7 +238,8 @@ ul li {
 }
 .input--documento
 {
-    width: 100px;
+    border-left: 1px solid #707070;
+    width: 150px;
     font-size: 20px;
 }
 .select--button,.input--documento
@@ -194,57 +248,130 @@ ul li {
 }
  .select--button
 {
+    margin-right: 5px;
     width: 150px;
 }
-/*Hover HELL*/
+
 .button--option:hover
 {
-    width: 90px;
+    width: 100px;
     height: 80%; 
     color: #F2F2F2;
     background-color: #8481B4;   
 }
-.ul--subMenu{
+
+.ul--subMenu
+{
     display: none;
 }
-.li--itemFilter:hover .ul--subMenu{
-    display: block;
+.li--itemFilter:hover
+{
     display: flex;
+    padding-left: 20px;
     flex-direction: column;
-    height: auto;
-}
-.li--itemFilter
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+} 
+.li--itemFilter:hover  .ul--subMenu
 {
     display: block;
-    display: flex;
-    flex-direction: column;
-    height: auto;
 }
-.li--item{
-    display: none;
-}
-.ul--menu--2:hover .li--item
-{   
-    display: block;
-}
-.ul--menu--2:hover
-{   
-    transition: 1s;
-    width: 30%;
-}
-.div--logo:hover{
-    transition: 1s;
-    width: 30%;
-}
-.div--logo:hover .ul--menu--1
-{
-    transition: 1s;
-    width: 30%;
-}
+
 /*Zona que imprime resultados*/
-.main--container{
+.section--container{
+    overflow: auto;
     margin-left: 30%;
-    height: 93vh;
+    height: 100vh;
     width: 70%;
+    padding: 20px;
     background-color: #F2F2F2;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.div--item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 100%;
+    background: white;
+    color: black;
+}
+
+/*Pagination*/
+.section--pagination
+{
+    background-color: rebeccapurple;
+    height: 50px;
+    width: 50%;
+}
+.ul--pagination
+{
+    display: flex;
+}
+.li--itemPagination
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #E8E9EC;
+    border-radius: 8px;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+}
+.a--itemPagination
+{
+    font-size: 23px;
+    color: black;
+}
+[class^="div--rowPage"]
+{
+    height: 50%;
+    width: 50%;
+}
+
+.div--rowPageLeft
+{
+    background-color: #808495;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+.div--rowPageRight
+{
+    background-color: #808495;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+/*Responsive*/
+@media only screen and (max-width: 1100px)
+{
+    .input--seach{
+        margin-right: 100px;
+        font-size: 20px;
+        height: 30px;
+        border-bottom: 1px solid #EBEBF2;
+    }
+    
+    .li--itemSvg{
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+    .input--seach{
+        margin-right: 50px;
+        font-size: 20px;
+        height: 30px;
+        border-bottom: 1px solid #EBEBF2;
+    }
+
+    .li--itemSvg{
+        margin-left: 10px;
+    }
+
 }
