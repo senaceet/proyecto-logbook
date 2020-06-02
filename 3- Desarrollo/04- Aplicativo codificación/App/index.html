@@ -4,29 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./styles.css" />
     <title>Index</title>
 </head>
-
 <body>
-    <header class="header--container">
+    <header class="header--container" id="a">
         <nav class="nav--container">
-            <div class="div--logo">
-                <p class="p--logo">LOGBOOK</p>
+            <div class="div--logo" id="div--logo">
+                <p class="p--logo" id="p--logo">LOGBOOK</p>
             </div>
-            <ul class="ul--menu--1">
+            <ul class="ul--menu--1" id="ul--menu--1">
 
                 <li class="li--item--userImage"><img class="img--userImage" src="https://i.ibb.co/5FMhYSh/1.jpg" alt="User image" /> </li>
-                <li class="li--item--userName"><a class="a--userName" href="" class="a--item">Juan Perez <div class="div--row"></div></a>
+                <li class="li--item--userName" id="li--item--userName"><p class="p--userName">Juan Perez <div id="div--row--up" class="div--row--up"></div></p>
                
-
-                    <ul class="ul--menu--dropDown">
+                    <ul id="ul--menu--dropDown--hidden" class="ul--menu--dropDown--hidden">
                         <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1" href="">Enviar opinión</a></li>
                         <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2" href="">Cerrar sesión</a></li>
                     </ul>
                 </li>
                 
-                <li class="li--item--config">
+                <li class="li--item--config li--itemSvg">
                     <?xml version="1.0" encoding="iso-8859-1"?>
                     <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +87,7 @@
                         </g>
                     </svg>
                 </li>
-                <li class="li--item--help">
+                <li class="li--item--help li--itemSvg">
                     <?xml version="1.0" encoding="iso-8859-1"?>
                     <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +148,7 @@
                         <g>
                         </g>
                     </svg></li>
-                <li class="li--item--search">
+                <li class="li--item--search li--itemSvg">
                     <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -194,11 +193,12 @@
 </g>
 </svg>
 
-                    <input type="search" name="" id="">
+                    <input class="input--seach " type="search" name="" id="">
                 </li>
             </ul>
         </nav>
-        <ul class="ul--menu--2">
+        <!--Menú vertical-->
+        <ul class="ul--menu2--open" id="ul--menu2--open">
             <li class="li--item"><a href="" class="a--item">Home</a></li>
             <li class="li--item"><a href="" class="a--item">Configuración</a></li>
             <li class="li--item"><a href="" class="a--item">Personas</a></li>
@@ -219,35 +219,52 @@
                     <!--Estado-->
                     <li class="li--subItem">
                         <p class="p--indicadorFilter">Estado</p>
-                        <div class="div--optionsContainer">
-                            <button class="button--option">Todos</button>
-                            <button class="button--option">Activo</button>
-                            <button class="button--option">Inactivo</button>
+                        <div class="div--optionsContainer div--buttonsContainer">
+                            <button class="button button--option">Todos</button>
+                            <button class="button button--option">Activo</button>
+                            <button class="button button--option">Inactivo</button>
                         </div>
                     </li>
                     <!--Rol-->
                     <li class="li--subItem">
                         <p class="p--indicadorFilter">Rol</p>
-                        <div class="div--optionsContainer">
-                            <button class="button--option">Todos</button>
-                            <button class="button--option">Admins</button>
-                            <button class="button--option">Instructores</button>
-                            <button class="button--option">Aprendices</button>
+                        <div class="div--optionsContainer div--buttonsContainer">
+                            <button class="button button--option">Todos</button>
+                            <button class="button button--option">Admins</button>
+                            <button class="button button--option">Instructores</button>
+                            <button class="button button--option">Aprendices</button>
                         </div>
                     </li>
-                </ul>
+                </ul><!--ul--subMenú-->
             </li>
             <li class="li--item"><a href="" class="a--item">Agregar personas</a></li>
             <li class="li--item"><a href="" class="a--item">Reporte error</a></li>
             <li class="li--item"><a href="" class="a--item">Enviar opinión</a></li>
-        </ul>
+        </ul><!--ul--Menú 2-->
     </header>
     <main class="main--container">
-
+        <section class="section--container" id="section--container">
+            <!--Resultados de la plataforma-->
+            <p class="p--textResult">Resultados de tu busqueda:</p>
+            <div class="div--item" >1</div>
+            <div class="div--item" >2</div>
+            <div class="div--item" >3</div>
+            <div class="div--item" >4</div>
+            <div class="div--item" >5</div>
+            <div class="div--item" >6</div>
+            <section class="section--pagination"> 
+                <ul class="ul--pagination">
+                    <li class="li--itemPagination li--itemPaginationActive"><a class="a--itemPagination" href=""><div class="div--rowPageLeft"></div></a></li>
+                    <li class="li--itemPagination"><a class="a--itemPagination" href="">1</a></li>
+                    <li class="li--itemPagination"><a class="a--itemPagination" href="">2</a></li>
+                    <li class="li--itemPagination"><a class="a--itemPagination" href="">3</a></li>
+                    <li class="li--itemPagination li--itemPaginationActive"><a class="a--itemPagination" href=""><div class="div--rowPageRight"></div></a></li>
+                </ul>
+            </section>
+        </section>
     </main>
     <footer>
-
     </footer>
+    <script src="./assets/js/scriptMenu.js"></script>
 </body>
-
 </html>
