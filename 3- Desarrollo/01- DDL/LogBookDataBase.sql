@@ -18,14 +18,13 @@
 --
 -- Table structure for table `administrador`
 --
-CREATE DATABASE LogBook;
+CREATE DATABASE LogBook;	
 
-USE LogBook;
+USE LogBook; 
 
 DROP TABLE IF EXISTS `administrador`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-
 CREATE TABLE `administrador` (
   `fk_numero_documento` varchar(20) NOT NULL,
   `fk_id_tipo_documento` int NOT NULL,
@@ -103,7 +102,7 @@ DROP TABLE IF EXISTS `competencia`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `competencia` (
   `id_competencia` int NOT NULL AUTO_INCREMENT,
-  `descripcion_competencia` text NOT  NULL,
+  `descripcion_competencia` text NOT NULL,
   `fk_id_programa` int NOT NULL,
   `fk_id_especialidad` int NOT NULL,
   PRIMARY KEY (`id_competencia`,`fk_id_programa`,`fk_id_especialidad`),
@@ -155,20 +154,23 @@ CREATE TABLE `ficha` (
   `id_ficha` int NOT NULL AUTO_INCREMENT,
   `numero_ficha` int NOT NULL,
   `estado_ficha` varchar(10) NOT NULL,
+  `fk_id_grupo` varchar(20) NOT NULL,
   `fk_id_programa` int NOT NULL,
   `fk_id_especialidad` int NOT NULL,
   `fk_id_jornada` int NOT NULL,
   `fk_id_trimestre` int NOT NULL,
   `fk_id_competencia` int NOT NULL,
-  PRIMARY KEY (`id_ficha`),
+  PRIMARY KEY (`id_ficha`,`fk_id_grupo`),
+  KEY `fk_id_grupo` (`fk_id_grupo`),
   KEY `fk_id_programa` (`fk_id_programa`,`fk_id_especialidad`),
   KEY `fk_id_jornada` (`fk_id_jornada`),
   KEY `fk_id_trimestre` (`fk_id_trimestre`),
   KEY `fk_id_competencia` (`fk_id_competencia`),
-  CONSTRAINT `ficha_ibfk_1` FOREIGN KEY (`fk_id_programa`, `fk_id_especialidad`) REFERENCES `programa` (`id_programa`, `fk_id_especialidad`),
-  CONSTRAINT `ficha_ibfk_2` FOREIGN KEY (`fk_id_jornada`) REFERENCES `jornada` (`id_jornada`),
-  CONSTRAINT `ficha_ibfk_3` FOREIGN KEY (`fk_id_trimestre`) REFERENCES `trimestre` (`id_trimestre`),
-  CONSTRAINT `ficha_ibfk_4` FOREIGN KEY (`fk_id_competencia`) REFERENCES `competencia` (`id_competencia`)
+  CONSTRAINT `ficha_ibfk_1` FOREIGN KEY (`fk_id_grupo`) REFERENCES `grupo` (`id_grupo`),
+  CONSTRAINT `ficha_ibfk_2` FOREIGN KEY (`fk_id_programa`, `fk_id_especialidad`) REFERENCES `programa` (`id_programa`, `fk_id_especialidad`),
+  CONSTRAINT `ficha_ibfk_3` FOREIGN KEY (`fk_id_jornada`) REFERENCES `jornada` (`id_jornada`),
+  CONSTRAINT `ficha_ibfk_4` FOREIGN KEY (`fk_id_trimestre`) REFERENCES `trimestre` (`id_trimestre`),
+  CONSTRAINT `ficha_ibfk_5` FOREIGN KEY (`fk_id_competencia`) REFERENCES `competencia` (`id_competencia`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -179,6 +181,29 @@ CREATE TABLE `ficha` (
 LOCK TABLES `ficha` WRITE;
 /*!40000 ALTER TABLE `ficha` DISABLE KEYS */;
 /*!40000 ALTER TABLE `ficha` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `grupo`
+--
+
+DROP TABLE IF EXISTS `grupo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `grupo` (
+  `id_grupo` varchar(20) NOT NULL,
+  `nombre_grupo` varchar(10) NOT NULL,
+  PRIMARY KEY (`id_grupo`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `grupo`
+--
+
+LOCK TABLES `grupo` WRITE;
+/*!40000 ALTER TABLE `grupo` DISABLE KEYS */;
+/*!40000 ALTER TABLE `grupo` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -225,7 +250,7 @@ CREATE TABLE `instructor_ficha` (
   PRIMARY KEY (`fk_id_ficha`,`fk_id_tipo_documento`,`fk_numero_documento`),
   KEY `fk_id_tipo_documento` (`fk_id_tipo_documento`,`fk_numero_documento`),
   CONSTRAINT `instructor_ficha_ibfk_1` FOREIGN KEY (`fk_id_tipo_documento`, `fk_numero_documento`) REFERENCES `instructor` (`fk_id_tipo_documento`, `fk_numero_documento`) ON UPDATE CASCADE,
-  CONSTRAINT `instructor_ficha_ibfk_2` FOREIGN KEY (`fk_id_ficha`) REFERENCES `ficha`(`id_ficha`)
+  CONSTRAINT `instructor_ficha_ibfk_2` FOREIGN KEY (`fk_id_ficha`) REFERENCES `ficha` (`id_ficha`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -452,7 +477,7 @@ DROP TABLE IF EXISTS `tipo_documento`;
 CREATE TABLE `tipo_documento` (
   `id_tipo_documento` int NOT NULL AUTO_INCREMENT,
   `siglas` varchar(10) NOT NULL,
-  `nombre_tipo_documento` varchar(30) NOT  NULL,
+  `nombre_tipo_documento` varchar(30) NOT NULL,
   PRIMARY KEY (`id_tipo_documento`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -563,4 +588,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-23 12:14:20
+-- Dump completed on 2020-06-02 13:23:01
