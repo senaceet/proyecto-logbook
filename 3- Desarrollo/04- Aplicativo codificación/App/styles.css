@@ -81,7 +81,7 @@ ul li
 }
 .div--logo--min
 {
-    width: 30%;
+    width: 5%;
 }
 .p--logo
 {
@@ -134,25 +134,27 @@ ul li
     padding-left: 10px;
     
 }
-.div--row--down
-{
-    margin-left: 10px;
-    margin-bottom: 7px;
-    background-color: #A4AFB7;
-    height: 20px;
-    width: 20px;
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 55% 99%, 82% 50%, 55% 0);
-    transform: rotate(90deg)
-}
+
 .div--row--up{
     margin-left: 10px;
     margin-bottom: 7px;
     background-color: #A4AFB7;
     height: 20px;
     width: 20px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 55% 99%, 82% 50%, 55% 0);
     transform: rotate(-90deg);
     margin-top: 18px;
 }
+.div--row--down
+{
+    margin: 5px 0 7px 10px;
+    background-color: #A4AFB7;
+    height: 20px;
+    width: 20px;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 55% 99%, 82% 50%, 55% 0);
+    transform: rotate(90deg)
+}
+
 .li--itemSvg
 {
     margin-right: 50px;
@@ -182,7 +184,6 @@ ul li
     padding-bottom: 10px;
 }
 
-
 .ul--menu--dropDown--hidden
 {
     display: none;
@@ -208,7 +209,7 @@ ul li
 }
 
 /*Dash board-----------*/
-.ul--menu--2
+.ul--menu2--open
 {
     position: absolute;
     min-height: 100vh;
@@ -218,6 +219,11 @@ ul li
     background-color: #545087;
     overflow-y: auto;
 }
+.ul--menu2--close
+{
+    width: 5%;
+}
+
 .li--item
 {   
     display: flex;
@@ -323,6 +329,11 @@ ul li
     column-gap: 1em;
     row-gap: 2em;
 }
+.section--container--full
+{
+    margin-left: 5%;
+    width: 95%;
+}
 .p--textResult
 {
     font-size: 30px;
@@ -418,7 +429,6 @@ ul li
         padding-left: 50px;
         font-size: 20px;
         height: 30px;
-        background-color: #EBEBF2;
         border-bottom: 1px solid #EBEBF2;
     }
     
@@ -446,6 +456,56 @@ ul li
 
     .li--itemSvg{
         margin-left: 10px;
+    }
+
+    .section--container{
+        overflow: auto;
+        margin-left: 30%;
+        height: 100vh;
+        width: 70%;
+        padding: 20px;
+        background-color: #F2F2F2;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 50px repeat(8,150px) 50px;
+        align-items: center;
+        column-gap: 1em;
+        row-gap: 2em;
+    }
+    .p--textResult
+    {
+        font-size: 30px;
+        color: #43425D;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    .section--pagination
+    {
+        grid-column: 1 / 2;
+        grid-row: 8 / 9;
+        background-color: #F2F2F2;
+    }
+}
+@media only screen and (max-width: 360px)
+{
+    .ul--menu--1
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .input--seach{
+        width: 5px;
+        margin-right: 50px;
+        font-size: 20px;
+        height: 30px;
+        border-bottom: 1px solid #EBEBF2;
+    }
+
+    .li--itemSvg{
+        margin-left: 1px;
     }
 
     .section--container{
