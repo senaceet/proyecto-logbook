@@ -1,10 +1,9 @@
-*
-{
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -414,6 +413,89 @@ ul li
     background-color: #808495;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 63% 100%, 88% 50%, 63% 0);
 }
+
+/*------------------------------------------------------------- FOOTER ---------------------------------------------------------*/
+.footer--contenedor__principal {
+  width: 100%;
+  background-color: #04151f;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+.footer--contenedor-logbook {
+  width: 33.33%;
+}
+
+.footer-titulo {
+  margin-left: 32px;
+  letter-spacing: 8px;
+  color: #43425d;
+  font-size: 30px;
+}
+
+.footer--contenedor__iconos {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-iconos a {
+  padding: 20px;
+  margin: 5px;
+  font-size: 23px;
+  color: #fff;
+}
+
+.footer--contenedor__contactenos {
+  display: flex;
+  width: 33.33%;
+  color: #fff;
+  border-left: 1px solid #fff;
+}
+
+.footer-contactenos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--contactenos__titulo {
+  display: flex;
+  align-items: center;
+}
+
+.h2--titulo {
+  font-size: 15px;
+  margin-left: 60px;
+}
+
+.footer-contactenos a {
+  color: #fff;
+  font-size: 14px;
+  padding: 1px;
+  margin: 3px;
+  text-decoration: none;
+  align-self: flex-end;
+  margin-right: 20px;
+  border: 0.5px solid transparent;
+  display: inline-block; /*nuevo*/
+}
+
+.footer-iconos a:hover {
+  color: #43425d;
+  background: #fff;
+  border-radius: 20%;
+}
+
+.icon-mobile {
+  margin-right: 43px;
+}
+
+.icon-laptop {
+  margin-right: 31px;
+}
 /*Responsive*/
 @media only screen and (max-width: 1100px)
 {
@@ -486,6 +568,35 @@ ul li
         grid-row: 8 / 9;
         background-color: #F2F2F2;
     }
+/*====Dashboard=============*/
+
+/* ------------------------------ RESPONSIVE DESIGN - FOOTER ---------------------------------*/
+@media screen and (max-width: 1021px) {
+  .footer-iconos a {
+    padding: 10px;
+  }
+
+  .h2--titulo {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 869px) {
+  .footer-iconos a {
+    padding: 10px;
+    font-size: 23px;
+  }
+
+  .h2--titulo {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .footer-titulo {
+    margin-left: 28px;
+    font-size: 25px;
+  }
 }
 @media only screen and (max-width: 360px)
 {
@@ -536,4 +647,111 @@ ul li
         grid-row: 8 / 9;
         background-color: #F2F2F2;
     }
+@media screen and (max-width: 820px) {
+  .footer-iconos a {
+    padding: 6px;
+    font-size: 21px;
+  }
+
+  .h2--titulo {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .footer-titulo {
+    margin-left: 10px;
+    font-size: 22px;
+  }
+
+  .footer-contactenos a {
+    font-size: 12px;
+  }
+
+  .icon-mobile {
+    margin-right: 38px;
+  }
+
+  .icon-laptop {
+    margin-right: 28px;
+  }
 }
+
+@media screen and (max-width: 750px) {
+  .footer-iconos a {
+    padding: 6px;
+    font-size: 21px;
+  }
+
+  .h2--titulo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 552px) {
+  .footer--contenedor__principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer--contenedor__iconos {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .footer--contenedor__contactenos {
+    width: 100%;
+    border-left: none;
+    margin-top: 10px;
+  }
+
+  .footer-contactenos a {
+    margin-top: 10px;
+    align-self: center;
+  }
+
+  .footer-contactenos span {
+    margin-top: 100px;
+    font-size: 14px;
+  }
+
+  .footer-titulo {
+    letter-spacing: 30px;
+  }
+
+  .footer-iconos a {
+    padding: 25px;
+  }
+
+  .footer-iconos {
+    margin-bottom: 15px;
+  }
+
+  .footer--contenedor__iconos {
+    width: 100%;
+    order: 3;
+  }
+
+  .footer--contenedor-logbook {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-contactenos {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 335px) 
+{
+  .footer-iconos a {
+    padding: 6px;
+    font-size: 21px;
+  }
+
+  .h2--titulo {
+    display: none;
+  }
+}}}
