@@ -191,7 +191,7 @@ DROP TABLE IF EXISTS `grupo`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `grupo` (
-  `id_grupo` varchar(20) NOT NULL,
+  `id_grupo` varchar(5) NOT NULL,
   `nombre_grupo` varchar(10) NOT NULL,
   PRIMARY KEY (`id_grupo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
