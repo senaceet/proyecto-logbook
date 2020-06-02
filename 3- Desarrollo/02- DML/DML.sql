@@ -211,23 +211,23 @@ VALUES    (01, '1110652509' ),
 -- Inserción de datos para la tabla <<aprendiz dicha>> -
 INSERT INTO aprendiz_ficha (fk_id_tipo_documento, fk_numero_documento, fk_id_ficha)
  VALUES   (01, '1110652509',  01),
-          (01, '1120652510',  01),
+          (01, '1120652510',  02),
           (02, '95011103101', 01),
-          (02, '94021103202', 01),
-          (02, '93031103303', 01),
+          (02, '94021103202', 02),
+          (02, '93031103303', 02),
           (02, '92041103404', 01),
-          (02, '91051103505', 01),
-          (02, '90061103606', 01),
+          (02, '91051103505', 03),
+          (02, '90061103606', 02),
           (02, '91071103707', 01),
-          (02, '92081103808', 01),
+          (02, '92081103808', 03),
           (02, '93091103909', 01),
           (02, '94001100001', 01),
-          (03, 'CE1234567CO', 01),
-          (03, 'CA1234567CO', 01),
-          (03, 'RU1234567CO', 01),
-          (03, 'OS1234567CO', 01),
+          (03, 'CE1234567CO', 03),
+          (03, 'CA1234567CO', 03),
+          (03, 'RU1234567CO', 02),
+          (03, 'OS1234567CO', 03),
           (03, 'EY1234567CO', 01),
-          (03, 'MC1234567CO', 01);
+          (03, 'MC1234567CO', 02);
 
 -- Inserción de datos para la tabla <<resultado aprendizaje>> --  
 INSERT INTO resultado_aprendizaje (id_resultado_aprendizaje, numero_resultado_de_aprendizaje, descripcion_resultado_aprendizaje, fk_id_competencia, fk_id_programa, fk_id_especialidad)
