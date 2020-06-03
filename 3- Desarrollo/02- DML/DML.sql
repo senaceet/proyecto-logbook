@@ -176,15 +176,23 @@ INSERT INTO ficha (id_ficha, numero_ficha, estado_ficha, fk_id_programa, fk_id_e
 VALUES (01, 1963872, 'ACTIVA', 02, 4, 1, 01, 1, 'G1'),
        (02, 1547854, 'ACTIVA', 02, 4, 1, 02, 1, 'G2'),
        (03, 1754697, 'ACTIVA', 02, 4, 3, 03, 1, 'G3'),
-	   (04, 3254698, 'ACTIVA', 02, 4, 1, 04, 1, 'G4');
+	   (04, 6254698, 'ACTIVA', 02, 4, 1, 04, 1, 'G4'),
+	   (05, 7254648, 'ACTIVA', 02, 4, 3, 05, 1, 'G5'),
+	   (06, 4254678, 'ACTIVA', 02, 4, 2, 06, 1, 'G6'),
+	   (07, 2254618, 'ACTIVA', 02, 4, 2, 07, 1, 'G7'),
+	   (08, 1254798, 'ACTIVA', 02, 4, 2, 08, 1, 'G8');
 
 
 -- Inserción de datos para la tabla <<instructor ficha>> --  
 INSERT INTO instructor_ficha (fk_id_ficha, fk_id_tipo_documento, fk_numero_documento)
 VALUES (01, 01, '1070652545'),
        (02, 01, '1080652536'),
-       (03, 01, '1090652527'),
-       (04, 01, '1000652518');
+       (03, 01, '1090652577'),
+       (04, 01, '1000652588'),
+       (05, 01, '1000652598'),
+       (06, 01, '1000652558'),
+       (07, 01, '1000652548'),
+       (08, 01, '1000652528');
 
 -- Inserción de datos para la tabla <<aprendiz>> --  
 INSERT INTO aprendiz (fk_id_tipo_documento, fk_numero_documento)
@@ -244,11 +252,15 @@ VALUES (01, 437657, 'RELACIONAR LAS TABLAS CONSTRUIDAS PARA PRESENTAR LA INFORMA
        (11, 444093, 'Interactuar en los contextos Productivos y Sociales en función de los Principios y Valores Universales.', 3, 02, 04);
 
 INSERT INTO grupo (id_grupo, nombre_grupo)
-VALUES ('G1', 'GRUPO UNO'    ),
-       ('G2', 'GRUPO DOS'    ),
-       ('G3', 'GRUPO TRES'   ), 
-       ('G4', 'GRUPO CUATRO' ),  
-       ('G5', 'GRUPO CINCO'  ); 
+VALUES ('G1', 'GRUPO UNO'),
+       ('G2', 'GRUPO DOS'),
+       ('G3', 'GRUPO TRES'), 
+       ('G4', 'GRUPO CUATRO'),  
+       ('G5', 'GRUPO CINCO'),
+       ('G6', 'GRUPO SEIS'),
+       ('G7', 'GRUPO SIETE'),
+       ('G8', 'GRUPO OCHO');
+
        
 
 
