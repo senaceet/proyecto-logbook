@@ -37,27 +37,3 @@ function expandir_menu_vertical()
     ulMenuVertical.classList.toggle('ul--menu2--close');
     sectionResultados.classList.toggle('section--container--full');
 }
-
-
-
-/*
-disparadorMenuH.addEventListener('click', expandir_menu_vertical);
-
-function expandir_menu_vertical(){
-    //Recorrer todos los elementos li hijos de ul
-for(let i = 0; i < liElements.length; i++ ){
-    let elements = liElements[i];   
-
-    if (elements.classList.contains('li--item'))
-    {
-        elements.classList.remove('li--item');
-        elements.classList.add('li--item--visible');
-    }else
-    {
-        elements.classList.remove('li--item--visible');
-        elements.classList.add('li--item')
-        }//else
-    }//For
-}//Function
-
-*/
