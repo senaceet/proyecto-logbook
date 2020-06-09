@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <!--Ojo a los keykords-->
     <!--Falta el .ico-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/fonts/fonts.css" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./styles.css" />
     <title>Logbook | ¡Bienvenido!</title>
 </head>
+
 <body>
     <header class="header--container" id="a">
         <nav class="nav--container">
@@ -20,20 +22,27 @@
             </div>
             <ul class="ul--menu--1" id="ul--menu--1">
 
-                <li class="li--item--userImage"><img class="img--userImage" src="https://i.ibb.co/5FMhYSh/1.jpg" alt="User image" /> </li>
-                <li class="li--item--userName" id="li--item--userName"><p class="p--userName">Juan Perez <div id="div--row--up" class="div--row--up"></div></p>
-               
+                <li class="li--item--userImage"><img class="img--userImage" src="https://i.ibb.co/5FMhYSh/1.jpg"
+                        alt="User image" /> </li>
+                <li class="li--item--userName" id="li--item--userName">
+                    <p class="p--userName">Juan Perez
+                    <div id="div--row--up" class="div--row--up"></div>
+                    </p>
+
                     <ul id="ul--menu--dropDown--hidden" class="ul--menu--dropDown--hidden">
-                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1" href=""><i class='bx bx-message-rounded-check' style='color:#a5a4bf' ></i>Enviar opinión</a></li>
-                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2" href=""> <i class='bx bx-log-out-circle' style='color:#a5a4bf'></i>Cerrar sesión</a></li>
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1" href=""><i
+                                    class='bx bx-message-rounded-check' style='color:#a5a4bf'></i>Enviar opinión</a>
+                        </li>
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2" href=""> <i
+                                    class='bx bx-log-out-circle' style='color:#a5a4bf'></i>Cerrar sesión</a></li>
                     </ul>
                 </li>
-                
+
                 <li class="li--item--config li--itemSvg">
-                    <i class='bx bxs-wrench' style='color:#a5a4bf'  ></i>
+                    <i class='bx bxs-wrench' style='color:#a5a4bf'></i>
                 </li>
                 <li class="li--item--help li--itemSvg">
-                    <i class='bx bxs-buoy' style='color:#a5a4bf'  ></i>
+                    <i class='bx bxs-buoy' style='color:#a5a4bf'></i>
                 </li>
                 <li class="li--item--search li--itemSvg">
                     <i class='bx bx-search bx-mb'></i>
@@ -43,10 +52,14 @@
         </nav>
         <!--Menú vertical-->
         <ul class="ul--menu2--open" id="ul--menu2--open">
-            <li class="li--item"><a href="" class="a--item"> <i class='bx bxs-home bx-md' style='color:#a5a4bf' ></i> Home</a></li>
-            <li class="li--item"><a href="" class="a--item"><i class='bx bx-id-card bx-md' style='color:#a5a4bf'  ></i>Configuración</a></li>
-            <li class="li--item"><a href="" class="a--item"><i class='bx bxs-user bx-md' style='color:#a5a4bf' ></i>Personas</a></li>
-            <li class="li--item li--itemFilter"><a href="" class="a--item"> <i class='bx bx-filter-alt bx-md' style='color:#a5a4bf'  ></i>Filtrar</a>
+            <li class="li--item"><a href="" class="a--item"> <i class='bx bxs-home bx-md' style='color:#a5a4bf'></i>
+                    Home</a></li>
+            <li class="li--item"><a href="" class="a--item"><i class='bx bx-id-card bx-md'
+                        style='color:#a5a4bf'></i>Configuración</a></li>
+            <li class="li--item"><a href="" class="a--item"><i class='bx bxs-user bx-md'
+                        style='color:#a5a4bf'></i>Personas</a></li>
+            <li class="li--item li--itemFilter"><a href="" class="a--item"> <i class='bx bx-filter-alt bx-md'
+                        style='color:#a5a4bf'></i>Filtrar</a>
                 <ul class="ul--subMenu">
                     <li class="li--subItem">
                         <p class="p--indicadorFilter">Documento <span>| Número</span> </p>
@@ -79,57 +92,84 @@
                             <button class="button button--option">Aprendices</button>
                         </div>
                     </li>
-                </ul><!--ul--subMenú-->
+                </ul>
+                <!--ul--subMenú-->
             </li>
-            <li class="li--item"><a href="" class="a--item"><i class='bx bxs-user-plus bx-md' style='color:#a5a4bf' ></i>Agregar personas</a></li>
-            <li class="li--item"><a href="" class="a--item"><i class='bx bxs-message-rounded-x bx-md' style='color:#a5a4bf'  ></i>Reporte error</a></li>
-            <li class="li--item"><a href="" class="a--item"><i class='bx bx-message-alt-error bx-md' style='color:#a5a4bf' ></i>Reporte de  opiniónes</a></li>
-        </ul><!--ul--Menú 2-->
+            <li class="li--item"><a href="" class="a--item"><i class='bx bxs-user-plus bx-md'
+                        style='color:#a5a4bf'></i>Agregar personas</a></li>
+            <li class="li--item"><a href="" class="a--item"><i class='bx bxs-message-rounded-x bx-md'
+                        style='color:#a5a4bf'></i>Reporte error</a></li>
+            <li class="li--item"><a href="" class="a--item"><i class='bx bx-message-alt-error bx-md'
+                        style='color:#a5a4bf'></i>Reporte de opiniónes</a></li>
+        </ul>
+        <!--ul--Menú 2-->
     </header>
     <main class="main--container">
         <section class="section--container" id="section--container">
             <!--Resultados de la plataforma-->
             <p class="p--textResult">Resultados de tu busqueda:</p>
-            <div class="div--item" >1</div>
-            <div class="div--item" >2</div>
-            <div class="div--item" >3</div>
-            <div class="div--item" >4</div>
-            <div class="div--item" >5</div>
-            <div class="div--item" >6</div>
-            <section class="section--pagination"> 
+            <div class="div--item">
+                <img class="div--item--image" src="https://i.ibb.co/5FMhYSh/1.jpg" alt="1" border="0">
+                <div class="div--item--name">
+                    <p> Samuel Alejandro Galindo perez</p>
+                </div>
+                <div class="div--item--states">
+                    <p>Estado</p>
+                    <button>activo</button>
+                </div>
+                <div class="div--item--icons">
+                    <img src="https://i.ibb.co/y8HwwZS/edit-alt-regular-24.png" alt="edit-alt-regular-24" border="0">
+                    <img src="https://i.ibb.co/8gYN4X5/x-regular-24.png" alt="x-regular-24" border="0">
+                </div>
+
+
+
+
+            </div>
+            <div class="div--item">2</div>
+            <div class="div--item">3</div>
+            <div class="div--item">4</div>
+            <div class="div--item">5</div>
+            <div class="div--item">6</div>
+            <section class="section--pagination">
                 <ul class="ul--pagination">
-                    <li class="li--itemPagination li--itemPaginationActive"><a class="a--itemPagination" href=""><div class="div--rowPageLeft"></div></a></li>
+                    <li class="li--itemPagination li--itemPaginationActive"><a class="a--itemPagination" href="">
+                            <div class="div--rowPageLeft"></div>
+                        </a></li>
                     <li class="li--itemPagination"><a class="a--itemPagination" href="">1</a></li>
                     <li class="li--itemPagination"><a class="a--itemPagination" href="">2</a></li>
                     <li class="li--itemPagination"><a class="a--itemPagination" href="">3</a></li>
-                    <li class="li--itemPagination li--itemPaginationActive"><a class="a--itemPagination" href=""><div class="div--rowPageRight"></div></a></li>
+                    <li class="li--itemPagination li--itemPaginationActive"><a class="a--itemPagination" href="">
+                            <div class="div--rowPageRight"></div>
+                        </a></li>
                 </ul>
             </section>
         </section>
     </main>
     <footer class="footer--contenedor__principal">
-      <section class="footer--contenedor-logbook">
-        <h1 class="footer-titulo">LOGBOOK</h1>
-      </section>
-      <section class="footer--contenedor__iconos">
-        <div class="footer-iconos">
-          <a href="#"><span class="icon-facebook-with-circle"></span></a>
-          <a href="#"><span class="icon-github-with-circle"></span></a>
-          <a href="#"><span class="icon-instagram-with-circle"></span></a>
-          <a href="#"><span class="icon-twitter-with-circle"></span></a>
-        </div>
-      </section>
-      <section class="footer--contenedor__contactenos">
-        <div class="footer--contactenos__titulo">
-          <h2 class="h2--titulo">Contáctenos</h2>
-        </div>
-        <div class="footer-contactenos">
-          <a href="#"><span class="icon-slideshare"> Llámenos al 3144319820</span></a>
-          <a href="#"><span class="icon-mobile"> www.logbook.com</span></a>
-          <a href="#"><span class="icon-laptop"> Acerca de Logbook</span></a>
-        </div>
-      </section>
+        <section class="footer--contenedor-logbook">
+            <h1 class="footer-titulo">LOGBOOK</h1>
+        </section>
+        <section class="footer--contenedor__iconos">
+            <div class="footer-iconos">
+                <a href="#"><span class="icon-facebook-with-circle"></span></a>
+                <a href="#"><span class="icon-github-with-circle"></span></a>
+                <a href="#"><span class="icon-instagram-with-circle"></span></a>
+                <a href="#"><span class="icon-twitter-with-circle"></span></a>
+            </div>
+        </section>
+        <section class="footer--contenedor__contactenos">
+            <div class="footer--contactenos__titulo">
+                <h2 class="h2--titulo">Contáctenos</h2>
+            </div>
+            <div class="footer-contactenos">
+                <a href="#"><span class="icon-slideshare"> Llámenos al 3144319820</span></a>
+                <a href="#"><span class="icon-mobile"> www.logbook.com</span></a>
+                <a href="#"><span class="icon-laptop"> Acerca de Logbook</span></a>
+            </div>
+        </section>
     </footer>
     <script src="./assets/js/scriptMenu.js"></script>
-  </body>
+</body>
+
 </html>
