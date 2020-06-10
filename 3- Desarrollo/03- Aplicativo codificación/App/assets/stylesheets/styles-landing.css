@@ -37,7 +37,7 @@ body {
   
   /* LogBook */
   .content--tipography h2 {
-    margin-top: 200px;
+    margin-top: 130px;
     font-size: 100px;
     font-weight: bold;
     font-family: "Lato";
@@ -86,7 +86,9 @@ body {
   
   .btn a:hover {
     font-weight: bold;
-    border: 1px solid transparent;
+    -webkit-box-shadow: 6px 3px 55px -6px rgba(0,0,0,0.75); /* Chrome, Safari */
+    -moz-box-shadow: 6px 3px 55px -6px rgba(0,0,0,0.75);   /* Mozilla Firefox */
+    box-shadow: 6px 3px 55px -6px rgba(0,0,0,0.75);       /* Todos los navegadores */
   }
   /*---------------------------------------------------------RESPONSIVE DESIGN-------------------------------------------------------*/
   @media screen and (max-width: 780px) {
@@ -98,7 +100,7 @@ body {
   
     /* LogBook */
     .content--tipography h2 {
-      margin-top: 200px;
+      margin-top: 150px;  
       font-size: 70px;
       font-weight: bold;
     }
