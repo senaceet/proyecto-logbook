@@ -68,48 +68,51 @@ ul li
     background-color: #545087;
     box-shadow: 0px 2px 6px #0000000A;
 }
-.div--logo
+.div--logo--close
 {
     position: absolute;
     left: 0;
     display: flex;
     align-items: center;
-    background-color: #0000001A;
-    width: 30%;
+    background-color: #0000001A;   
     height: 50px;
-}
-.div--logo--min
-{
     width: 5%;
 }
-.p--logo
+.div--logo--open
+{
+    width: 25%;
+}
+
+.p--logo--close
+{
+    display: none;
+}
+
+.p--logo--open
 {
     font-weight: bold;
     margin-left: 20px;
     letter-spacing: 5px;
     font-size: 25px;
     color: white;
-}
-.p--logo--min
-{
-    display: none;
+    display: block;
 }
 /*Menú horizontal*/
-.ul--menu--1
+.ul--menu--close
 {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     flex-wrap: wrap;
-    width: 70%;
+    width: 95%;  
     padding-right: 50px;
     background-color: #ffffff;
     box-shadow: 0px 2px 6px #0000000A;
 }
 
-.ul--menu--min
+.ul--menu--open
 {
-    width: 95%;
+  width: 75%;
 }
 .img--userImage
 {
@@ -208,19 +211,20 @@ ul li
 }
 
 /*Dash board-----------*/
-.ul--menu2--open
-{
-    position: absolute;
-    min-height: 100vh;
-    max-height: 100vh;
-    width: 30%;
-    padding-top: 30px;
-    background-color: #545087;
-    overflow-y: auto;
-}
 .ul--menu2--close
 {
-    width: 5%;
+  position: absolute;
+  min-height: 100vh;
+  max-height: 100vh;
+  padding-top: 30px;
+  background-color: #545087;
+  overflow-y: auto;  
+  width: 5%;
+}
+
+.ul--menu2--open
+{  
+  width: 25%;   
 }
 
 .li--item
@@ -314,25 +318,27 @@ ul li
 }
 
 /*Zona que imprime resultados*/
-.section--container{
-    overflow: auto;
-    margin-left: 30%;
-    height: 100vh;
-    width: 70%;
+.section--container--close
+{
     padding: 20px;
+    margin-left: 5%;
     background-color: #F2F2F2;
+    height: 100vh;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 50px repeat(3,150px) 50px;
     align-items: center;
     column-gap: 1em;
     row-gap: 2em;
+    overflow: auto;
 }
-.section--container--full
-{
-    margin-left: 5%;
-    width: 95%;
+
+.section--container--open{
+    margin-left: 35%;
+    width: 75%;
 }
+
 .p--textResult
 {
     font-size: 30px;
@@ -611,7 +617,6 @@ width: 65%;
 .footer--contenedor__principal {
   width: 100%;
   background-color: #04151f;
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

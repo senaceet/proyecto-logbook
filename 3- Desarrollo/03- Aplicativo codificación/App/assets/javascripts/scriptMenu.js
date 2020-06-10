@@ -1,4 +1,4 @@
-//Menú horizontal
+//Menú dropDown
 const disparadorMenuH = document.getElementById('li--item--userName');
 const menuHorizontal =  document.getElementById('ul--menu--dropDown--hidden');
 const divRow = document.getElementById('div--row--up');
@@ -18,12 +18,12 @@ function mostrar_drop_down_menu (){
     divRow.classList.toggle('div--row--down');
 }
 
-//Menú vertical
+//Menú vertical -  dashboard
 
 const disparadorMenuV = document.getElementById('div--logo');
 const ulMenuHorizontal = document.getElementById('ul--menu--1');
 const pLogo = document.getElementById('p--logo');
-const ulMenuVertical = document.getElementById('ul--menu2--open');
+const ulMenuVertical = document.getElementById('ul--menu2--close');
 const liElements = document.getElementsByClassName('li--item');
 const sectionResultados = document.getElementById('section--container');
 
@@ -31,9 +31,9 @@ disparadorMenuV.addEventListener('click', expandir_menu_vertical);
 
 function expandir_menu_vertical()
 {
-    ulMenuHorizontal.classList.toggle('ul--menu--min');
-    disparadorMenuV.classList.toggle('div--logo--min');
-    pLogo.classList.toggle('p--logo--min');
-    ulMenuVertical.classList.toggle('ul--menu2--close');
+    ulMenuHorizontal.classList.toggle('ul--menu--open');
+    disparadorMenuV.classList.toggle('div--logo--open');
+    pLogo.classList.toggle('p--logo--open');
+    ulMenuVertical.classList.toggle('ul--menu2--open');
     sectionResultados.classList.toggle('section--container--full');
 }
