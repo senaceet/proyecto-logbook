@@ -27,6 +27,7 @@ const ulMenuVertical = document.getElementById('ul--menu2--close');
 const liElements = document.getElementsByClassName('li--item');
 const sectionResultados = document.getElementById('section--container');
 const divHamburger = document.getElementById('divHamburger');
+const spanText = document.querySelectorAll('.span--dashBoard--hidden');
 
 disparadorMenuV.addEventListener('click', expandir_menu_vertical);
 
@@ -39,6 +40,14 @@ function expandir_menu_vertical()
     sectionResultados.classList.toggle('section--container--full');
     divHamburger.classList.toggle('div--menu-btn--x');
     
+
+
+    for (let i of spanText) {
+    i += 1;
+    spanText.classList.toggle('span--dashBoard--hidden');
+    }
+
+
 }
 
 //Abrir filtro de opciones
