@@ -16,10 +16,11 @@
 <body>
     <header class="header--container" id="a">
         <nav class="nav--container">
-            <div class="div--logo" id="div--logo">
-                <p class="p--logo" id="p--logo">LOGBOOK</p>
+            <div class="div--logo--close" id="div--logo">
+                <div id="divHamburger" href="#" class="div--menu-btn"></div>
+                <p class="p--logo--close" id="p--logo">LOGBOOK</p>
             </div>
-            <ul class="ul--menu--1" id="ul--menu--1">
+            <ul class="ul--menu--close" id="ul--menu--1">
 
                 <li class="li--item--userImage"><img class="img--userImage" src="https://i.ibb.co/5FMhYSh/1.jpg"
                         alt="User image" /> </li>
@@ -29,30 +30,31 @@
                     </p>
 
                     <ul id="ul--menu--dropDown--hidden" class="ul--menu--dropDown--hidden">
-                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1" href=""><i class='bx bx-message-rounded-check' style='color:#a5a4bf' ></i>Enviar opinión</a></li>
-                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2" href="../index.html"> <i class='bx bx-log-out-circle' style='color:#a5a4bf'></i>Cerrar sesión</a></li>
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1" href=""><i class='i--DropDown bx bx-message-rounded-check'></i>Enviar opinión</a></li>
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2" href="../index.html"> <i class='i--DropDown i--DropDownCloseSesion bx bx-log-out-circle'></i>Cerrar sesión</a></li>
                     </ul>
                 </li>
 
                 <li class="li--item--config li--itemSvg">
-                    <i class='bx bxs-wrench' style='color:#a5a4bf'></i>
+                    <a class="a--svg a--svgConfig" href=""><i class='bx bxs-wrench'></i></a>
                 </li>
                 <li class="li--item--help li--itemSvg">
-                    <i class='bx bxs-buoy' style='color:#a5a4bf'></i>
+                    <a class="a--svg a--svgHelp" href=""><i class='bx bxs-buoy'></i></a>
                 </li>
                 <li class="li--item--search li--itemSvg">
-                    <i class='bx bx-search bx-mb'></i>
+                    <i class='i--search bx bx-search bx-mb'></i>
                     <input class="input--seach " type="search" name="" id="">
                 </li>
             </ul>
         </nav>
+
         <!--Menú vertical-->
-        <ul class="ul--menu2--open" id="ul--menu2--open">
-            <li class="li--item"><a href="" class="a--item"><i class='bx bxs-home bx-md' style='color:#a5a4bf'></i>Home</a></li>
-            <li class="li--item"><a href="" class="a--item"><i class='bx bx-id-card bx-md'style='color:#a5a4bf'></i>Configuración</a></li>
-            <li class="li--item"><a href="" class="a--item"><i class='bx bxs-user bx-md'style='color:#a5a4bf'></i>Personas</a></li>
-            <li class="li--item li--itemFilter"><a href="" class="a--item"><i class='bx bx-filter-alt bx-md'style='color:#a5a4bf'></i>Filtrar</a>
-                <ul class="ul--subMenu">
+        <ul class="ul--menu2--close" id="ul--menu2--close">
+            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bxs-home bx-md'></i><span class="span--dashBoard--hidden">Home</span></a></li>
+            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bx-id-card bx-md'></i><span class="span--dashBoard--hidden">Configuración</span></a></li>
+            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bxs-user bx-md'></i><span class="span--dashBoard--hidden">Personas</span></a></li>
+            <li id="liFilter" class="li--item"><p class="p--filter"><i class='i--dashBoardIcon bx bx-filter-alt bx-md'></i><span class="span--dashBoard--hidden">Filtrar</span></p>
+                <ul id="ulSumMenuFiltro" class="ul--subMenu--hidden">
                     <li class="li--subItem">
                         <p class="p--indicadorFilter">Documento <span>| Número</span> </p>
                         <div class="div--optionsContainer">
@@ -87,24 +89,18 @@
                 </ul>
                 <!--ul--subMenú-->
             </li>
-            <li class="li--item"><a href="" class="a--item"><i class='bx bxs-user-plus bx-md' style='color:#a5a4bf'></i>Agregar personas</a></li>
-            <li class="li--item"><a href="" class="a--item"><i class='bx bxs-message-rounded-x bx-md' style='color:#a5a4bf'></i>Reporte error</a></li>
-            <li class="li--item"><a href="" class="a--item"><i class='bx bx-message-alt-error bx-md' style='color:#a5a4bf'></i>Reporte de opiniónes</a></li>
+            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bxs-user-plus bx-md'></i><span class="span--dashBoard--hidden">Agregar personas</span></a></li>
+            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bxs-message-rounded-x bx-md'></i><span class="span--dashBoard--hidden">Reporte error</span></a></li>
+            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bx-message-alt-error bx-md'></i><span class="span--dashBoard--hidden">Reporte de opiniónes</span></a></li>
         </ul>
         <!--ul--Menú 2-->
     </header>
     <main class="main--container">
-        <!--Configuraciones de perfil-->
-        
-        <header class="header--container" id="a">
-            <!--Menú vertical-->
-            <ul class="ul--menu2--open" id="ul--menu2--open">
-                    
-            </ul>
-        </header>
-        
-        <section class="section--container" id="section--container">
+        <section class="section--container--close" id="section--container">
             <!--Aquí sus partes de agregar usuario y demás, comentario a petición de Daniel-->
+            <div class="configuracionUsuario">
+                
+            </div>
         </section>
     </main>
     <footer class="footer--contenedor__principal">
