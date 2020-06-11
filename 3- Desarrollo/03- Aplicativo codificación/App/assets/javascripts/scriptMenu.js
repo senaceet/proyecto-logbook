@@ -26,6 +26,7 @@ const pLogo = document.getElementById('p--logo');
 const ulMenuVertical = document.getElementById('ul--menu2--close');
 const liElements = document.getElementsByClassName('li--item');
 const sectionResultados = document.getElementById('section--container');
+const divHamburger = document.getElementById('divHamburger');
 
 disparadorMenuV.addEventListener('click', expandir_menu_vertical);
 
@@ -36,4 +37,19 @@ function expandir_menu_vertical()
     pLogo.classList.toggle('p--logo--open');
     ulMenuVertical.classList.toggle('ul--menu2--open');
     sectionResultados.classList.toggle('section--container--full');
+    divHamburger.classList.toggle('div--menu-btn--x');
+    
+}
+
+//Abrir filtro de opciones
+
+const liFilter = document.getElementById('liFilter');
+const ulSubMenuFilter = document.getElementById('ulSumMenuFiltro');
+
+liFilter.addEventListener('click', abrirFiltro);
+
+function abrirFiltro()
+{
+    liFilter.classList.toggle('li--itemFilter--active');
+    ulSubMenuFilter.classList.toggle('ul--subMenu--visible');
 }
