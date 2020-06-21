@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #4D4F5C;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: row-reverse;
+    background: #F2F2F2;
+}       
+.section-container {
+    display: flex;
+    background:  #F2F2F2;           
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+form{
+    width: 50%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+form h1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: 24vh;
+    cursor: pointer;
+    letter-spacing: 3px;  
+}
+.form--text1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: bold;
+    font-size: 11px;
+    color: rgba(77, 79, 92, 0.5);
+    padding: 8px;
+}
+
+a{
+    text-decoration: none;
+}
+.form-container-validacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 45%;
+    font-size: 12px;
+    padding: 5px;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: baseline;
+   
+}
+.form--know{
+    
+    align-items: flex-end;
+}
+
+.form--user{
+    display: flex;
+    margin: 18px;
+    width: 85%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #E9E9F0;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+.form-container-submit{
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    justify-content: space-around;
+    
+}
+[class^="form--submit"]{
+    padding: 7px;
+    flex-wrap: nowrap;
+    width: 45%;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.form--submit1{
+    border: 1px solid #685FDE;
+    background: #685FDE;
+    color:white;
+
+}
+
+.form--submit2{
+    border: 1px solid #4D4F5C;
+    background: none;
+    color:#4D4F5C;
+    
+}
+
+.form--texto2{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(77, 79, 92, );
+    font-size: 11px;
+
+    margin-top: 105px;
+}
+
+.form--validacion{
+    margin: 5px;
+    padding: 40px;
+   
+}
