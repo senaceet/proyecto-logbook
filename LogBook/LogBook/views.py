@@ -37,10 +37,22 @@ def log_out(request):
     return redirect('login')
 
 def registroUsuario(request):
-    return render(request, 'form.html',{
-
-     })
-
+    if request.method == 'POST':
+        firstName  = request.POST.get('first-name')
+        secondName = request.POST.get('second-name')
+        firstLastName = request.POST.get('first-last-name')
+        secondLastName = request.POST.get('second-last-name')
+        userEmail = request.POST.get('email')
+        userAge = request.POST.get('age')
+        userCode = request.POST.get('code')
+        Password = request.POST.get('password')
+        confirmPassword = request.POST.get('confirmPassword')
+        if Password ==  confirmPassword:
+            userPassword = confirmPassword
+        else:
+            messages.error(request,'Las contraseñas no son iguales.')
+        print(firstName,secondName,firstLastName,secondLastName,userEmail,userAge,userPassword)
+    return render(request, 'form.html')
 def restoreAccount(request):
     return render(request, 'recuperarCuenta.html')
 
