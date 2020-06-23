@@ -3,42 +3,42 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 max-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" href="https://i.ibb.co/kmctXQm/libro.png" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'stylesheets/loggin.css'%}">
-    <title>Registro</title>
+    <title>Ingresar</title>
 </head>
 <body>
-    <section class="section-container">
-        <!--No me borres, aquí va lo de instagram-->
+    <section class="section-container-form">
+        <form action="" class="form-container">
+            {% csrf_token %}
+            <div class="form-text">
+                <a href="{% url 'index' %}">LOGBOOK</a>
+                <p>¡Bienvenido de vuelta!</p>
+            </div>
+            <div class="form--user-date">
+                <input name="user" type="text" placeholder="Usuario" class="form--user" required>
+                <input name="password" type="password" placeholder="Contraseña" class="form--user" required>
+            </div>
+            <div class="form-container-validacion">
+                <div class="item-check">
+                    <input type="checkbox" class="form--validacion" id="validar">
+                    <label for="validar"> Recuerdame</label>
+                </div>
+                <div class="item-recover">
+                    <a href="{% url 'recuperarCuenta' %}">¿Olvidaste tu contraseña?</a>
+                </div>
+            </div>
+            <div class="form-container-submit">
+                <input type="submit" value="Ingresar" class="form--submit sub1">
+                <input type="submit" value="Registrarse" class="form--submit sub2">
+            </div>
+
+        </form>
+        <div class="item-terms">
+            <a href="{% url 'index' %}">Terminos de uso. Politica de privacidad</a>
+        </div>
     </section>
-    <form class="form-container" method="POST">
-        {% csrf_token %}
-        <div>
-            <h1>LOGBOOK</h1>
-            <p class="form--text1">¡Bienvenido de vuelta!</p>
-        </div>
-        <div class="form--user-date">
-            <input name="user" type="text" placeholder="Usuario" class="form--user" required>
-            <input name="password" type="password" placeholder="Contraseña" class="form--user" required>
-        </div>
-        <div class="form-container-validacion">
-            <div>
-                <input type="checkbox" class="form--validacion" id="validar">Recuerdame
-            </div>
-            <div class="form--know">
-                <a href="{% url 'recuperarCuenta' %}">¿Olvidaste tu contraseña?</a>
-            </div>
-
-        </div>
-        <div class="form-container-submit">
-            <input type="submit" value="Ingresar" class="form--submit1">
-            <input type="submit" value="Registrarse" class="form--submit2">
-        </div>
-
-        <p class="form--texto2">
-            <a href="" class="form-text-a">Terminos de uso. Politica de privacidad</a>
-        </p>
-    </form>
 </body>
 </html>

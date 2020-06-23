@@ -13,7 +13,7 @@
         <form action="" class="form-container">
             {% csrf_token %}
             <div class="form-text">
-                <a href="index">LogBook</a>
+                <a href="{% url 'index' %}">LogBook</a>
                 <p>Por favor completa los campos para crear tu cuenta</p>
             </div>
             <div class="div-item-names">
@@ -49,7 +49,7 @@
             </div>
         </form>
         <div class="item-terms">
-            <a href="#">Terminos de uso. Politica de privacidad</a>
+            <a href="{% url 'index' %}">Terminos de uso. Politica de privacidad</a>
         </div>
     </section>
 </body>
