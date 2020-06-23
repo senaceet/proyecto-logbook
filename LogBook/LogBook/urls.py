@@ -10,5 +10,6 @@ urlpatterns = [
     path('usuarios/recuperarCuenta', views.restoreAccount, name= 'recuperarCuenta'),
     path('usuarios/registro', views.registro, name= 'registro'),
     path('usuarios/dashboard', login_required(views.dashboard_view), name = 'dashboard'),
+    path('usuarios/dashboard/crearUsuario', login_required(views.crearUsuario), name = 'crearUsuario'),
     path('admin/', admin.site.urls),
 ]

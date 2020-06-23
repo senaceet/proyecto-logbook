@@ -40,3 +40,6 @@ def registro(request):
 
 def restoreAccount(request):
     return render(request, 'recuperarCuenta.html')
+
+def crearUsuario(request):
+    return render(request,'crearUsuario.html')

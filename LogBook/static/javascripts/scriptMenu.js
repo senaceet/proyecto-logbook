@@ -28,7 +28,7 @@ const liElements = document.getElementsByClassName('li--item');
 const sectionResultados = document.getElementById('section--container');
 const divHamburger = document.getElementById('divHamburger');
 const spanText = document.querySelectorAll('.span--dashBoard--hidden');
-
+const liFilter = document.getElementById('liFilter');
 disparadorMenuV.addEventListener('click', expandir_menu_vertical);
 
 function expandir_menu_vertical()
@@ -40,19 +40,20 @@ function expandir_menu_vertical()
     sectionResultados.classList.toggle('section--container--full');
     divHamburger.classList.toggle('div--menu-btn--x');
     
+    const aItem = document.querySelectorAll('.a--item');
 
+    aItem.forEach(function(a){
+        a.children[1].classList.toggle('span--dashBoard--visible');
+    });
 
-    for (let i of spanText) {
-    i += 1;
-    spanText.classList.toggle('span--dashBoard--hidden');
-    }
-
-
+    
+    liFilter.forEach(function(li){
+        li.children[2].classList.toggle('span--dashBoard--visible');
+    });
 }
 
-//Abrir filtro de opciones
 
-const liFilter = document.getElementById('liFilter');
+//Abrir filtro de opciones
 const ulSubMenuFilter = document.getElementById('ulSumMenuFiltro');
 
 liFilter.addEventListener('click', abrirFiltro);

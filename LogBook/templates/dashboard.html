@@ -51,10 +51,10 @@
 
         <!--Menú vertical-->
         <ul class="ul--menu2--close" id="ul--menu2--close">
-            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bxs-home bx-md'></i><span class="span--dashBoard--hidden">Home</span></a></li>
+            <li class="li--item"><a href="{% url 'dashboard' %}" class="a--item"><i class='i--dashBoardIcon bx bxs-home bx-md'></i><span class="span--dashBoard--hidden">Home</span></a></li>
             <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bx-id-card bx-md'></i><span class="span--dashBoard--hidden">Configuración</span></a></li>
-            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bxs-user bx-md'></i><span class="span--dashBoard--hidden">Personas</span></a></li>
-            <li id="liFilter" class="li--item"><p class="p--filter"><i class='i--dashBoardIcon bx bx-filter-alt bx-md'></i><span class="span--dashBoard--hidden">Filtrar</span></p>
+            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bx-group bx-md'></i><span class="span--dashBoard--hidden">Personas</span></a></li>
+            <li id="liFilter" class="li--item li--item2"><p class="p--filter"><i class='i--dashBoardIcon bx bx-filter-alt bx-md'></i><span class="span--dashBoard--hidden">Filtrar</span></p>
                 <ul id="ulSumMenuFiltro" class="ul--subMenu--hidden">
                     <li class="li--subItem">
                         <p class="p--indicadorFilter">Documento <span>| Número</span> </p>
@@ -90,7 +90,7 @@
                 </ul>
                 <!--ul--subMenú-->
             </li>
-            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bxs-user-plus bx-md'></i><span class="span--dashBoard--hidden">Agregar personas</span></a></li>
+            <li class="li--item"><a href="{% url 'crearUsuario' %}" class="a--item"><i class='i--dashBoardIcon bx bxs-user-plus bx-md'></i><span class="span--dashBoard--hidden">Agregar personas</span></a></li>
             <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bxs-message-rounded-x bx-md'></i><span class="span--dashBoard--hidden">Reporte error</span></a></li>
             <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bx-message-alt-error bx-md'></i><span class="span--dashBoard--hidden">Reporte de opiniónes</span></a></li>
         </ul>
