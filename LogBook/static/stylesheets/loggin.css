@@ -175,6 +175,12 @@ body{
     color:white;
 }
 .sub2{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
     background: none;
     color: black;
     border: 1px solid #b1b1b1;

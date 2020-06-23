@@ -11,7 +11,7 @@
 </head>
 <body>
     <section class="section-container-form">
-        <form action="" class="form-container">
+        <form method="post" class="form-container">
             {% csrf_token %}
             <div class="form-text">
                 <a href="{% url 'index' %}">LOGBOOK</a>
@@ -32,7 +32,7 @@
             </div>
             <div class="form-container-submit">
                 <input type="submit" value="Ingresar" class="form--submit sub1">
-                <input type="submit" value="Registrarse" class="form--submit sub2">
+                <a href="{% url 'registroUsuario' %}" class="form--submit sub2">Registrarse</a>
             </div>
 
         </form>
