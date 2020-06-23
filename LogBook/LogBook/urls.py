@@ -1,3 +1,6 @@
+from django.config import settings
+from django.config.url.static import static
+
 from django.contrib import admin
 from django.urls import path
 from django.contrib.auth.decorators import login_required
@@ -14,4 +17,4 @@ urlpatterns = [
     path('usuarios/dashboard/configPerfil', login_required(views.configPerfil), name = 'configPerfil'),
     path('usuarios/dashboard/enviarOpinion', login_required(views.enviarOpinion), name = 'enviarOpinion'),
     path('admin/', admin.site.urls),
-]
+] + static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)

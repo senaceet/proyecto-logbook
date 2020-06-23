@@ -1,0 +1,1 @@
+web: gunicorn LogBook.wsgi --log-file -
