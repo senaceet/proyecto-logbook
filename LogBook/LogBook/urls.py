@@ -9,7 +9,9 @@ urlpatterns = [
     path('usuarios/logout', views.log_out, name= 'logout'),
     path('usuarios/recuperarCuenta', views.restoreAccount, name= 'recuperarCuenta'),
     path('usuarios/registro', views.registro, name= 'registro'),
-    path('usuarios/dashboard', login_required(views.dashboard_view), name = 'dashboard'),
+    path('usuarios/dashboard/home', login_required(views.dashboard_view), name = 'dashboard'),
     path('usuarios/dashboard/crearUsuario', login_required(views.crearUsuario), name = 'crearUsuario'),
+    path('usuarios/dashboard/configPerfil', login_required(views.configPerfil), name = 'configPerfil'),
+    path('usuarios/dashboard/enviarOpinion', login_required(views.enviarOpinion), name = 'enviarOpinion'),
     path('admin/', admin.site.urls),
 ]

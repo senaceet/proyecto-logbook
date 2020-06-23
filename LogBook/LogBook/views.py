@@ -26,7 +26,10 @@ def login_form_view(request):
     return render(request, 'loggin.html')
 
 def dashboard_view(request):
-    return render(request, 'dashboard.html')
+    return render(request, 'homeDashboard.html',{
+        'nombre': 'Juan',
+        'apellido': 'Pepino'
+    })
 
 
 def log_out(request):
@@ -43,3 +46,9 @@ def restoreAccount(request):
 
 def crearUsuario(request):
     return render(request,'crearUsuario.html')
+
+def configPerfil(request):
+    return render(request,'configPerfil.html')
+
+def enviarOpinion(request):
+    return render(request,'FormOpiniones.html')

@@ -26,12 +26,12 @@
                 <li class="li--item--userImage"><img class="img--userImage" src="https://i.ibb.co/5FMhYSh/1.jpg"
                         alt="User image" /> </li>
                 <li class="li--item--userName" id="li--item--userName">
-                    <p class="p--userName">Juan Perez
+                    <p class="p--userName">{{nombre}} {{apellido}}
                     <div id="div--row--up" class="div--row--up"></div>
                     </p>
 
                     <ul id="ul--menu--dropDown--hidden" class="ul--menu--dropDown--hidden">
-                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1" href=""><i class='i--DropDown bx bx-message-rounded-check'></i>Enviar opinión</a></li>
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1" href="{% url 'enviarOpinion'%}"><i class='i--DropDown bx bx-message-rounded-check'></i>Enviar opinión</a></li>
                         <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2" href="{% url 'logout' %}"> <i class='i--DropDown i--DropDownCloseSesion bx bx-log-out-circle'></i>Cerrar sesión</a></li>
                     </ul>
                 </li>
@@ -52,7 +52,7 @@
         <!--Menú vertical-->
         <ul class="ul--menu2--close" id="ul--menu2--close">
             <li class="li--item"><a href="{% url 'dashboard' %}" class="a--item"><i class='i--dashBoardIcon bx bxs-home bx-md'></i><span class="span--dashBoard--hidden">Home</span></a></li>
-            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bx-id-card bx-md'></i><span class="span--dashBoard--hidden">Configuración</span></a></li>
+            <li class="li--item"><a href="{% url 'configPerfil' %}" class="a--item"><i class='i--dashBoardIcon bx bx-id-card bx-md'></i><span class="span--dashBoard--hidden">Configuración</span></a></li>
             <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bx-group bx-md'></i><span class="span--dashBoard--hidden">Personas</span></a></li>
             <li id="liFilter" class="li--item li--item2"><p class="p--filter"><i class='i--dashBoardIcon bx bx-filter-alt bx-md'></i><span class="span--dashBoard--hidden">Filtrar</span></p>
                 <ul id="ulSumMenuFiltro" class="ul--subMenu--hidden">
@@ -99,6 +99,8 @@
     <main class="main--container">
         <section class="section--container--close" id="section--container">
             <!--Aquí sus partes de agregar usuario y demás, comentario a petición de Daniel-->
+            {% block formOpinion%}
+            {% endblock%}
             {% block content %}
             {% endblock %}
         </section>
@@ -128,5 +130,6 @@
       </section>
     </footer>
     <script src="{% static 'javascripts/scriptMenu.js'%}"></script>
+    <script src="{% static 'javascripts/consejos.js'%}"></script>
   </body>
 </html>
