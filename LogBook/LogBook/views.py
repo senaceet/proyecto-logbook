@@ -36,7 +36,7 @@ def log_out(request):
     logout(request)
     return redirect('login')
 
-def registro(request):
+def registroUsuario(request):
     return render(request, 'form.html',{
 
      })
