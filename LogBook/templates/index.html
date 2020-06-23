@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700|Roboto:400,700&display=swap" rel="stylesheet"/>
+    <link rel="shortcut icon" href="https://i.ibb.co/kmctXQm/libro.png" type="image/x-icon" />  
+    <link rel="stylesheet" href="{% static 'fonts/fonts.css'%}" />
+    <link rel="stylesheet" href="{% static 'stylesheets/styles-landing.css'%}" />
+    <link rel="stylesheet" href="{% static 'stylesheets/normalize.css'%}" />
+    <title>Bienvenido a Logbook | Inicia sesión</title>
+  </head>
+
+  <body>
+    <section class="cover--background">
+      <div class="content--tipography">
+        <div class="central--text">
+          <h2 class="title-logo"><span class="lateral-left-bar">Gestionando</span>LogBook<span class="lateral-right-bar"> Tu mundo...</span></h2>
+          <h1>Gestión de usuarios</h1>
+        </div>
+      </div>
+      <section class="btn">
+        <a href="{% url 'login' %}">Iniciar sesión</a>
+        <a href="{% url 'registroUsuario'%}">Regístrate</a>
+      </section>
+    </section>
+  </body>
+</html>

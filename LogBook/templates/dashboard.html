@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://i.ibb.co/kmctXQm/libro.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="{% static 'fonts/fonts.css'%}" />
+    <link rel="stylesheet" href="{% static 'stylesheets/normalize.css'%}" />
+    <link rel="stylesheet" href="{% static 'stylesheets/styles.css'%}" />
+    <title>Logbook | ¡Bienvenido!</title>
+</head>
+
+<body>
+    <header class="header--container" id="a">
+        <nav class="nav--container">
+            <div class="div--logo--close" id="div--logo">
+                <div id="divHamburger" href="#" class="div--menu-btn"></div>
+                <p class="p--logo--close" id="p--logo">LOGBOOK</p>
+            </div>
+            <ul class="ul--menu--close" id="ul--menu--1">
+
+                <li class="li--item--userImage"><img class="img--userImage" src="https://i.ibb.co/5FMhYSh/1.jpg"
+                        alt="User image" /> </li>
+                <li class="li--item--userName" id="li--item--userName">
+                    <p class="p--userName">{{nombre}} {{apellido}}
+                    <div id="div--row--up" class="div--row--up"></div>
+                    </p>
+
+                    <ul id="ul--menu--dropDown--hidden" class="ul--menu--dropDown--hidden">
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--1" href="{% url 'enviarOpinion'%}"><i class='i--DropDown bx bx-message-rounded-check'></i>Enviar opinión</a></li>
+                        <li class="li--item--DropDown"><a class="a--item--DropDown a--item--2" href="{% url 'logout' %}"> <i class='i--DropDown i--DropDownCloseSesion bx bx-log-out-circle'></i>Cerrar sesión</a></li>
+                    </ul>
+                </li>
+
+                <li class="li--item--config li--itemSvg">
+                    <a class="a--svg a--svgConfig" href=""><i class='bx bxs-wrench'></i></a>
+                </li>
+                <li class="li--item--help li--itemSvg">
+                    <a class="a--svg a--svgHelp" href=""><i class='bx bxs-buoy'></i></a>
+                </li>
+                <li class="li--item--search li--itemSvg">
+                    <i class='i--search bx bx-search bx-mb'></i>
+                    <input class="input--seach " type="search" name="" id="">
+                </li>
+            </ul>
+        </nav>
+
+        <!--Menú vertical-->
+        <ul class="ul--menu2--close" id="ul--menu2--close">
+            <li class="li--item"><a href="{% url 'dashboard' %}" class="a--item"><i class='i--dashBoardIcon bx bxs-home bx-md'></i><span class="span--dashBoard--hidden">Home</span></a></li>
+            <li class="li--item"><a href="{% url 'configPerfil' %}" class="a--item"><i class='i--dashBoardIcon bx bx-id-card bx-md'></i><span class="span--dashBoard--hidden">Configuración</span></a></li>
+            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bx-group bx-md'></i><span class="span--dashBoard--hidden">Personas</span></a></li>
+            <li id="liFilter" class="li--item li--item2"><p class="p--filter"><i class='i--dashBoardIcon bx bx-filter-alt bx-md'></i><span class="span--dashBoard--hidden">Filtrar</span></p>
+                <ul id="ulSumMenuFiltro" class="ul--subMenu--hidden">
+                    <li class="li--subItem">
+                        <p class="p--indicadorFilter">Documento <span>| Número</span> </p>
+                        <div class="div--optionsContainer">
+                            <select class="select--button" name="" id="">
+                                <option value="cedula">Cédula</option>
+                                <option value="ti">T.I</option>
+                                <option value="ce">C.E</option>
+                                <option value="pe">Pasaporte</option>
+                            </select>
+                            <input class="input--documento" type="text">
+                        </div>
+                    </li>
+                    <!--Estado-->
+                    <li class="li--subItem">
+                        <p class="p--indicadorFilter">Estado</p>
+                        <div class="div--optionsContainer div--buttonsContainer">
+                            <button class="button button--option">Todos</button>
+                            <button class="button button--option">Activo</button>
+                            <button class="button button--option">Inactivo</button>
+                        </div>
+                    </li>
+                    <!--Rol-->
+                    <li class="li--subItem">
+                        <p class="p--indicadorFilter">Rol</p>
+                        <div class="div--optionsContainer div--buttonsContainer">
+                            <button class="button button--option">Todos</button>
+                            <button class="button button--option">Admins</button>
+                            <button class="button button--option">Instructores</button>
+                            <button class="button button--option">Aprendices</button>
+                        </div>
+                    </li>
+                </ul>
+                <!--ul--subMenú-->
+            </li>
+            <li class="li--item"><a href="{% url 'crearUsuario' %}" class="a--item"><i class='i--dashBoardIcon bx bxs-user-plus bx-md'></i><span class="span--dashBoard--hidden">Agregar personas</span></a></li>
+            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bxs-message-rounded-x bx-md'></i><span class="span--dashBoard--hidden">Reporte error</span></a></li>
+            <li class="li--item"><a href="" class="a--item"><i class='i--dashBoardIcon bx bx-message-alt-error bx-md'></i><span class="span--dashBoard--hidden">Reporte de opiniónes</span></a></li>
+        </ul>
+        <!--ul--Menú 2-->
+    </header>
+    <main class="main--container">
+        <section class="section--container--close" id="section--container">
+            <!--Aquí sus partes de agregar usuario y demás, comentario a petición de Daniel-->
+            {% block formOpinion%}
+            {% endblock%}
+            {% block content %}
+            {% endblock %}
+        </section>
+    </main>
+    
+    <footer class="footer--contenedor__principal">
+      <section class="footer--contenedor-logbook">
+         <a class="a--footer--titulo" href="#">LOGBOOK</a>
+      </section>
+      <section class="footer--contenedor__iconos">
+        <div class="footer-iconos">
+          <a href="#"><span class="icon-facebook-with-circle"></span></a>
+          <a href="#"><span class="icon-github-with-circle"></span></a>
+          <a href="#"><span class="icon-instagram-with-circle"></span></a>
+          <a href="#"><span class="icon-twitter-with-circle"></span></a>
+        </div>
+      </section>
+      <section class="footer--contenedor__contactenos">
+        <div class="footer--contactenos__titulo">
+          <h2 class="h2--titulo">Contáctenos</h2>
+        </div>
+        <div class="footer-contactenos">
+          <a href="#"><span class="icon-slideshare"> Llámenos al 3144319820</span></a>
+          <a href="#"><span class="icon-mobile"> www.logbook.com</span></a>
+          <a href="#"><span class="icon-laptop"> Acerca de Logbook</span></a>
+        </div>
+      </section>
+    </footer>
+    <script src="{% static 'javascripts/scriptMenu.js'%}"></script>
+    <script src="{% static 'javascripts/consejos.js'%}"></script>
+  </body>
+</html>

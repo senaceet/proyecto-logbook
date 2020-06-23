@@ -1,0 +1,174 @@
+/*------------------------------------------------------------- LANDING PAGE -----------------------------------------------------*/
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+.cover--background {
+  background: url(https://i.ibb.co/PjzGc5V/bg-principal.png);
+  height: 657px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  /* Centra vertical y horizontal [flexbox] */
+  justify-content: center;
+}
+
+.content--tipography {
+  width: 100%;
+  color: #fff;
+}
+
+.central--text {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+/* Gestion de usuarios */
+.central--text h1 {
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0.4;
+  animation: desplazar_abajo 1s ease-in;
+  font-family: "Lato";
+}
+
+/* LogBook */
+.content--tipography h2 {
+  margin-top: 130px;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Lato";
+  animation: desplazar_derecha 1s ease-in;
+}
+
+.lateral-left-bar {
+  border-top: 4px solid #fff;
+  font-size: 13px;
+  font-family: "roboto";
+  font-weight: bold;
+  padding-top: 16px;
+}
+
+.lateral-right-bar {
+  padding-top: 16px;
+  border-top: 4px solid #fff;
+  font-size: 13px;
+  font-family: "roboto";
+  font-weight: bold;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  animation: desplazar_abajo 1s ease-in;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+.btn a {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 15px;
+  width: 160px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  font-weight: bold;
+  -webkit-box-shadow: 6px 3px 55px -6px rgba(0,0,0,0.75); /* Chrome, Safari */
+  -moz-box-shadow: 6px 3px 55px -6px rgba(0,0,0,0.75);   /* Mozilla Firefox */
+  box-shadow: 6px 3px 55px -6px rgba(0,0,0,0.75);       /* Todos los navegadores */
+}
+/*---------------------------------------------------------RESPONSIVE DESIGN-------------------------------------------------------*/
+@media screen and (max-width: 780px) {
+  .central--text h1 {
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.4;
+  }
+
+  /* LogBook */
+  .content--tipography h2 {
+    margin-top: 150px;  
+    font-size: 70px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* LogBook */
+  .content--tipography h2 {
+    font-size: 60px;
+  }
+
+  .lateral-left-bar {
+    font-size: 13px;
+    padding-top: 10px;
+  }
+
+  .lateral-right-bar {
+    font-size: 13px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .central--text h1 {
+    font-size: 17px;
+  }
+
+  /* LogBook */
+  .content--tipography h2 {
+    font-size: 40px;
+  }
+
+  .lateral-left-bar {
+    font-size: 13px;
+    padding-top: 2px;
+  }
+
+  .lateral-right-bar {
+    font-size: 13px;
+    padding-top: 2px;
+  }
+
+  .btn a {
+    padding: 10px 0;
+    font-size: 12px;
+    width: 120px;
+  }
+}
+/*-------------------------------------------------------ANIMACIONES KEYFRAMES----------------------------------------------------*/
+
+@keyframes desplazar_abajo {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes desplazar_derecha {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}  

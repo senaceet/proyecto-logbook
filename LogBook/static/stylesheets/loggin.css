@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: row-reverse;
+    background: #F2F2F2;
+}
+.section-container-form{
+    width: 50%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* background: greenyellow; */
+    width: 80%;
+    min-height: 70%;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+.form-text{
+    display: flex;
+    width: 100%;
+    /* background: saddlebrown; */
+    min-height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+.form-text a{
+    width: 80%;
+    /* background: seashell; */
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    letter-spacing: .1em;
+    color: black;
+    text-decoration: none;
+}
+
+.form-text p{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    /* background: skyblue; */
+    font-size: .75em;
+}
+.item-p-form2{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    /* background: skyblue; */
+    font-size: .75em; 
+    margin-top: 4%;
+    text-align: center;
+}
+.form--user-date{
+    display: flex;
+    /* background: wheat; */
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-content: space-evenly;
+    height: 30%;
+    margin-top: 8%;
+}
+.form--user{
+    width: 65%;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(196, 196, 196) ;
+    height: 35px;
+    
+}
+.form--user:nth-child(1){
+    margin-bottom: 5%;
+}
+.form--user:focus{
+    border-bottom: 1px solid #685FDE;
+}
+.form-container-validacion{
+    width: 65%;
+    /* background: seashell; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 15%;
+    align-content: center;
+    font-size: .85em;
+    text-decoration: none;
+    margin-top: 5%;
+}
+.item-check{
+    /* background: rgb(174, 221, 197); */
+    min-width: 40%;
+    vertical-align: super;
+    
+}
+.item-recover{
+    min-width: 40%;
+    /* background: cornflowerblue;   */
+}
+.item-recover a{
+    color: black;
+    text-decoration: none;
+}
+.item-recover a:hover{
+    color:#685FDE;
+}
+
+
+
+
+
+.form-container-submit{
+    width: 65%;
+    /* background: rgb(255, 113, 113); */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    min-height: 35px;
+    margin-top: 10%;   
+}
+.form-container-submit-2{
+    width: 65%;
+    /* background: rgb(255, 113, 113); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+    min-height: 35px;
+    margin-top: 10%; 
+
+}
+.form--submit{
+    width: 48%;
+
+}
+.form--submit--sub3{
+    width: 80%;
+    cursor: pointer; 
+    border: 1px solid #685FDE;
+    background: #685FDE;
+    color:white;
+}
+.sub1{
+    cursor: pointer; 
+    border: 1px solid #685FDE;
+    background: #685FDE;
+    color:white;
+}
+.sub1:hover{
+    border: 1px solid #7c72ff;
+    background: #7c72ff;
+    color:white;
+}
+
+.form--submit--sub3:hover{
+    border: 1px solid #7c72ff;
+    background: #7c72ff;
+    color:white;
+}
+.sub2{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
+    background: none;
+    color: black;
+    border: 1px solid #b1b1b1;
+    outline: none;
+
+}
+.sub2:hover {
+    border: 1px solid #7c72ff;
+    /* background: hsla(244, 100%, 72%, 0.5); */
+    color:#7c72ff;
+}
+
+
+.item-terms{
+    align-self: flex-end;
+    /* background: fuchsia; */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+.item-terms a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: .85em;
+}
+@media screen and (max-width: 1000px ){
+    .section-container-form{
+        width: 100%;
+    }
+
+}

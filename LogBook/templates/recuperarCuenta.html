@@ -1,0 +1,32 @@
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'stylesheets/loggin.css'%}">
+    <link rel="shortcut icon" href="https://i.ibb.co/kmctXQm/libro.png" type="image/x-icon">
+    <title>Recuperación</title>
+</head>
+<body>
+    <section class="section-container-form">
+        <form action="" class="form-container">
+            {% csrf_token %}
+            <div class="form-text">
+                <a href="{% url 'index' %}">LOGBOOK</a>
+                <p class="item-p-form2">Por favor ingresa tu correo para enviarte un link de recuperación</p>
+            </div>
+            <div class="form--user-date">
+                <input type="email" name="email" id="" placeholder="Correo" class="form--user">
+            </div>
+            <div class="form-container-submit-2">
+                <input type="submit" value="Enviar" class="form--submit--sub3">
+            </div>
+        </form>
+
+        <div class="item-terms">
+            <a href="{% url 'index' %}">Terminos de uso. Politica de privacidad</a>
+        </div>
+    </section>
+</body>
+</html>
