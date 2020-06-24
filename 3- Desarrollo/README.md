@@ -1,10 +1,12 @@
-<h1 align="center">
+# TODO EL CÓDIGO DEL PROYECTO EN LA RAMA "PREDEPLOY"
+
+<h2 align="center">
     <a href="./src/Home_logBook/index.html"><img src="../Otros/01- img README/user.png" alt="User image" width="300" height="300"></a>
     <!--Tittle-->
     <br />
     LogBook
     <br />
-</h1>
+</h2>
 <br />
 <!--Shield zone
 NO TOCAR SI NO SABEN CÓMO FUNCIONA, O TODO SE VA AL CARAJO COMO ME HA PASADO ÚLTIMAMENTE xd
