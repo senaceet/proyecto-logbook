@@ -1,24 +1,27 @@
 {% extends 'dashboard.html'%}
 {% block content %}
-            <div class="configuracionUsuario">
+            <div class="configuracionUsuario" id="IdconfiguracionUsuario">
                 <h2 class="texto--configuracion__perfil">Configuración de tu perfil.</h2>
                 <div class="formulario--contenedor__formulario">
                     <form action="#" id="#" class="formulario">
                         <div class="formulario--contenedor-uno">
                           <label for="primer--apellido">Primer apellido</label>
-                          <input type="text" name="primer--apellido" id="lastname" disabled>
+                          <input type="text" name="primer--apellido"  disabled>
                           <label for="primer--nombre">Primer nombre</label>
                           <input type="text" name="primer--nombre" id="first--name" disabled>
                           <label for="rh">RH</label>
-                          <input type="text" name="rh" id="grupo--sangre" disabled>
-                          <label for="contraseña">Contraseña</label>
-                          <input type="password" name="contraseña" id="password" disabled>
+                          <input type="text" name="rh" id="grupo--sangre" disabled>  
+                          <div id="password" class="CambiarContrasena">
+                            <i class='bx bxs-pencil' ></i>
+                            <div class="contrasena"></div>
+                          </div>
+                        </label>
                           <label for="correo-sena">Correo mi Sena</label>
                           <input type="email" name="correo-sena" id="correo-institucional" disabled>
                         </div>
                         <div class="formulario--contenedor-dos">
                           <label for="segundo-apellido">Segundo apellido</label>
-                          <input type="text" name="segundo-apellido" id="lastname" disabled>
+                          <input type="text" name="segundo-apellido"  disabled>
                           <label for="segundo-nombre">Segundo nombre</label>
                           <input type="text" name="segundo-nombre" id="second-name" disabled>
                             <div class="contenedor--tipo__documento">

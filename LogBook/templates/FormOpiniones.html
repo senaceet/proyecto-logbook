@@ -1,8 +1,25 @@
 {% extends 'dashboard.html'%}
 
 {% block formOpinion%}
-    <section class="sectionFormOpiniones">
-        <form action=""></form>
-        <h2>It's ok</h2>
-    </section>
+<div class="div--contenedorOpiniones">
+<div class="contenedor--opiniones">
+    <form class="formulario--opiniones" method="POST">
+        {% csrf_token %}
+     <p class="parrafo--opinion">Tu opinión es muy importante para <span class="color--home">LogBook</span>
+     </p>
+     <input type="text" name="titulo" id="title" placeholder="Título">
+     <textarea class="text--area" name="mensaje" id="messaje" placeholder="Tu mensaje, por favor sé respetuoso"></textarea>
+     <div class="iconos--estrellas">
+         <span class="icon-star-outlined"></span>
+         <span class="icon-star-outlined"></span>
+         <span class="icon-star-outlined"></span>
+         <span class="icon-star-outlined"></span>
+         <span class="icon-star-outlined"></span>
+     </div>
+     <div class="contenedor--btn__enviar">
+         <input type="submit" value="Enviar">
+     </div>
+    </form>
+</div>
+</div>
 {% endblock %}           

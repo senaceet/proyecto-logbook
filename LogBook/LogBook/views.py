@@ -51,8 +51,8 @@ def registroUsuario(request):
             userPassword = confirmPassword
         else:
             messages.error(request,'Las contraseñas no son iguales.')
-        print(firstName,secondName,firstLastName,secondLastName,userEmail,userAge,userPassword)
     return render(request, 'form.html')
+
 def restoreAccount(request):
     return render(request, 'recuperarCuenta.html')
 

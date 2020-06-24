@@ -63,3 +63,36 @@ function abrirFiltro()
     liFilter.classList.toggle('li--itemFilter--active');
     ulSubMenuFilter.classList.toggle('ul--subMenu--visible');
 }
+
+const password = document.getElementById('password');
+const IdconfiguracionUsuario = document.getElementById('IdconfiguracionUsuario');
+
+
+let marcadoCuadroContrasena = `
+
+<div id="contenedorContrasadf" class="contenedor--formulario__clave">
+<form class="formulario--cambiar__clave" action="">
+    <label for="clave--antigua">Antigua contraseña</label>
+    <input type="password" name="clave--antigua" id="old--pass" required>
+    <label for="clave--nueva">Nueva contraseña</label>
+    <input type="password" name="clave--nueva" id="new--pass" required>
+    <div class="contenedor--botones">
+        <button id="cancelarContra" class="color--gray" type="submit">Cancelar</button>
+        <button id="enviarNuevaContra" class="color--green-op1" type="submit">Confirmar</button>
+    </div>
+</form>
+</div>`;
+password.addEventListener('click', function(){
+    IdconfiguracionUsuario.innerHTML += marcadoCuadroContrasena;
+    const contenedorContrasadf = document.getElementById('contenedorContrasadf'); 
+    const cancelarContra = document.getElementById('cancelarContra');
+    cancelarContra.addEventListener('click',function(){
+        contenedorContrasadf.remove()
+    });
+
+    const enviarNuevaContra = document.getElementById('enviarNuevaContra');
+    enviarNuevaContra.addEventListener('click', function(){
+
+        
+    });
+});
