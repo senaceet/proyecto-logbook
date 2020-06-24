@@ -4,7 +4,6 @@ asgiref==3.2.10
 asn1crypto==0.24.0
 Beaker==1.10.0
 beautifulsoup4==4.9.0
-blivet-gui==2.1.12
 Brlapi==0.7.0
 CairoSVG==1.0.20
 cffi==1.12.3
