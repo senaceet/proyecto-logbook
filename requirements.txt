@@ -118,3 +118,4 @@ Tempita==0.5.1
 tesserocr==2.5.1
 tqdm==4.45.0
 urllib3==1.25.7
+whitenoise==5.1.0
