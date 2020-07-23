@@ -1,4 +1,7 @@
 import os
+import pymysql
+
+pymysql.install_as_MySQLdb()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -66,9 +69,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'LogBook',
         'USER':'root',
-        'PASSWORD': '123456789a',
+        'PASSWORD': 'Daniel45@@123CE',
         'HOST': 'localhost',
-        'PORT': ''
+        'PORT': '3306'
         
     }
 }
@@ -96,7 +99,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 
