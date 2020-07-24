@@ -1,0 +1,52 @@
+.section--pagination 
+  grid-column: 1 / 3
+  grid-row: 5 / 6
+
+.ul--pagination 
+  display: flex
+  justify-content: center
+
+.li--itemPagination 
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #ffffff
+  border: 1px solid #e8e9ec
+  border-radius: 8px
+  height: 50px
+  width: 50px
+  margin: 0 10px
+
+.a--itemPagination 
+  font-size: 23px
+  color: black
+
+.li--itemPagination
+    &:hover 
+        background-color: #685fde
+
+.li--itemPagination
+    &:hover 
+    .a--itemPagination
+     color: white
+
+.li--itemPaginationActive
+  &:hover
+    cursor: pointer
+    background-color: #ffffff
+
+.div--rowPage
+    height: 25px
+    width: 25px
+
+
+.div--rowPageLeft
+  margin-left: 10px
+  background-color: #808495
+  clip-path: polygon(36% 0, 10% 50%, 36% 100%, 25% 100%, 0% 50%, 25% 0%)
+
+
+.div--rowPageRight 
+  margin-right: 10px
+  background-color: #808495
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 63% 100%, 88% 50%, 63% 0)
