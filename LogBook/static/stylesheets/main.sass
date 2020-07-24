@@ -1,8 +1,18 @@
 @import './_variables'
 
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: $sourceFont
+
+html, body
+    background-color: $bgColor
+    height: 100%
+    width: 100%
+    
 @import './_errorStyles'
 @import './layout/_landing'
-@import './layout/_scrollBar'
 
 //Dashboard componets
 @import './layout/dashBoard/_layout-render'
@@ -21,14 +31,3 @@
 @import './layout/components/_results'
 @import './layout/components/_scrollBar'
 @import './layout/components/_footer'
-
-*
-    padding: 0
-    margin: 0
-    box-sizing: border-box
-    font-family: $sourceFont
-
-html, body
-    background-color: $bgColor
-    height: 100%
-    width: 100%
