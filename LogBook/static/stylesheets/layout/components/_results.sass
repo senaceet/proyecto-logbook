@@ -1,0 +1,677 @@
+.div--item  
+  display: flex
+  flex-wrap: wrap
+  height: 25vh
+  min-height: auto
+  max-width: 100%
+  background: white
+  color: black
+  padding: 10px
+  flex: 0 1 auto
+  position: relative
+  box-sizing: border-box
+
+.div--section--item--1
+  display: flex
+  width: 100%
+  justify-content: space-between
+  align-items: center
+  height: 50%
+
+.div--item--image 
+  border-radius: 50%
+  width: 55px
+  height: 55px
+
+.div--item--name
+  display: flex
+  flex-wrap: nowrap
+  width: 150px
+  margin: 5px
+  padding: 5px
+  text-align: center
+  font-size: 14px
+
+.div--item--name 
+    p
+        font-family: "Source Sans pro"
+        align-self: justify
+        font-size: 1em
+        flex: auto
+
+.div--item--states
+  display: flex
+  flex-wrap: wrap
+  width: 200px
+  font-size: 15px
+  justify-content: center
+  align-content: center
+  text-align: center
+  align-items: baseline
+  padding: 10px
+
+.div--item--states 
+    button
+        background-color: rgba(105, 228, 167)
+        padding: 5px
+        width: 100px
+        margin-left: 10px
+        border-radius: 10px
+        outline: none
+        opacity: 50%
+
+.div--item--states 
+    p
+        opacity: 50%
+
+.div--item--icons
+  display: flex
+  justify-content: space-between
+  width: 110px
+  height: 50%
+  margin: 10px
+
+.div--section--item--2 
+  display: flex
+  width: 70%
+  flex-wrap: wrap
+  height: 24%
+  font-size: 12px
+  justify-content: space-between
+  align-items: center
+
+.div--item--program
+  display: flex
+  width: 65%
+  justify-content: space-between
+  align-items: baseline
+
+.div--item--program 
+    &:nth-child(1) 
+        width: 22%
+        text-align: left
+        font-weight: bold
+
+.div--item--program 
+    &:nth-child(2)
+        width: 76%
+        text-align: left
+
+.div--item--age 
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+  width: 30%
+
+.div--item--age 
+    &:nth-child(1)
+        border-right: 1px solid #707070
+        text-align: center
+        width: 35%
+        font-weight: bold
+
+.div--item--age 
+    &:nth-child(2)
+        text-align: left
+        width: 55%
+
+.div--section--item--3
+  display: flex
+  width: 70%
+  flex-wrap: wrap
+  height: 24%
+  font-size: 12px
+  justify-content: space-between
+  align-items: center
+
+.div--item--email
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+  width: 65%
+
+.div--item--email 
+    &:nth-child(1)
+        width: 22%
+        text-align: left
+        font-weight: bold
+
+.div--item--email 
+    &:nth-child(2)
+        width: 76%
+        text-align: left
+        overflow: hidden
+
+.div--item--location 
+  display: flex
+  align-items: baseline
+  width: 30%
+  justify-content: space-between
+
+.div--item--location 
+    &:nth-child(1)
+        border-right: 1px solid #707070
+        font-weight: bold
+        width: 35%
+        text-align: center
+
+.div--item--location 
+    &:nth-child(2)
+        text-align: left
+        width: 55%
+
+.div--item--rol
+  display: flex
+  width: 28%
+  height: 40%
+  justify-content: center
+  align-items: center
+  margin: 2.5%
+  position: absolute
+  bottom: 0
+  right: 0
+
+.div--item--rol 
+    button
+        outline: none
+        height: 60%
+        width: 80%
+        border-radius: 25px
+        background: rgba(83, 66, 233, 50%)
+        color: #ffffff
+
+/*--------- CONFIGURACIONES DE PERFIL ----------------------------------------------*/
+.texto--configuracion__perfil
+  font-weight: 300
+  font-size: 30px
+  margin: 20px 30px
+
+.formulario--contenedor__formulario
+  display: flex
+  flex-direction: row
+  width: 90%
+  max-width: 90%
+  min-height: 500px
+  margin-right: 100px
+  margin-left: 50px
+  background-color: #fff
+  border-radius: 19px
+  padding: 40px
+  -webkit-box-shadow: 7px 7px 15px 1px rgba(0, 0, 0, 0.75)
+  -moz-box-shadow: 7px 7px 15px 1px rgba(0, 0, 0, 0.75)
+  box-shadow: 7px 7px 15px 1px rgba(0, 0, 0, 0.75)
+
+.formulario 
+  width: 80%
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-evenly
+
+
+.formulario 
+    label
+        margin: 5px 0
+        display: block
+        font-size: 13px
+
+.formulario 
+    input
+        padding: 3px
+        border: 1px solid #7c7b98
+        border-radius: 7px
+        outline: none
+
+.formulario--contenedor-uno,
+.formulario--contenedor-dos
+  width: 50%
+
+
+.formulario--contenedor-uno label,
+.formulario--contenedor-dos label
+        margin-top: 20px
+
+
+.contenedor--tipo__documento
+  display: inline-flex
+  margin-top: 45px
+
+
+.contenedor--tipo__documento 
+    input
+        margin-left: 10px
+        width: 57%
+        outline: none
+
+
+.contenedor--foto__perfil 
+  width: 50%
+  margin-top: 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.foto--perfil
+  width: 200px
+  height: 250px
+  border: 1px solid #707070
+  padding: 5px
+  border-radius: 24px
+
+.contenedor--btn
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  margin-top: 20px
+  margin-left: 8px
+  outline: none
+
+
+.btn--cambiar-img
+  background: #b6b1ff
+  padding: 10px 15px
+  border-radius: 5px
+  color: #fff
+  font-weight: 500
+  cursor: pointer
+  outline: none
+
+
+.contenedor--roles
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+  align-items: center
+  width: 40%
+
+
+.contenedor--rol-estado label,
+.contenedor--acciones label 
+        margin-top: 5px
+        display: block
+        font-size: 13px
+
+.contenedor--roles 
+    button
+        border-radius: 7px
+        color: #fff
+        font-weight: bold
+
+.btn-color-azul
+  width: 200px
+  margin-top: 10px
+  background-color: #00adfc
+  padding: 10px 17px
+  cursor: pointer
+
+
+.btn-color-verde
+  width: 200px
+  margin-top: 10px
+  background-color: #69e4a6
+  padding: 10px 17px
+  cursor: pointer
+
+.contenedor--acciones
+  display: flex
+  flex-direction: column
+  justify-content: space-evenly
+  width: 20%
+
+
+.contenedor--acciones 
+    button
+        width: 150px
+        margin-top: 10px
+        padding: 10px 17px
+        font-weight: 700
+        border-radius: 4px
+        cursor: pointer
+        outline: none
+
+.color--green
+  background-color: #69e4a6
+  color: #fff
+
+.color--danger
+  background: #ff5d5d
+  color: #fff
+
+.color--transparent
+  background-color: #cecece
+  color: #fff
+  font-weight: 600
+
+.color--transparente 
+  background-color: #cecece
+  color: #fff
+  font-weight: 600
+  font-size: 13px
+
+.color--success
+  background-color: #25D366
+
+.CambiarContrasena
+  height: 25px
+  width: 90%
+  margin-top: 20px
+  background-color: transparent
+  padding: 3px
+  border: 1px solid #7c7b98
+  border-radius: 7px
+
+/*------- CAMBIAR CONTRASEÑA --------------------------------------------------*/
+.contenedor--formulario__clave 
+  position: absolute
+  background: transparent
+  top: 50px
+  width: 100%
+  height: 90vh
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+
+.formulario--cambiar__clave
+  position: relative
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+  width: 30%
+  height: 70%
+  background-color: #fff
+  padding: 5px
+  border-radius: 30px
+  -webkit-box-shadow: 7px 9px 24px 6px rgba(0, 0, 0, 0.75)
+  -moz-box-shadow: 7px 9px 24px 6px rgba(0, 0, 0, 0.75)
+  box-shadow: 7px 9px 24px 6px rgba(0, 0, 0, 0.75)
+
+.formulario--cambiar__clave 
+    input
+        padding: 10px
+        width: 80%
+        outline: none
+        border: 1px solid #7c7b98
+        margin: 20px
+        opacity: 1
+        border-radius: 6px
+
+
+.formulario--cambiar__clave 
+    label
+        color: #7c7b98
+        font-size: 17px
+
+.contenedor--botones 
+    button
+        width: 150px
+        padding: 10px
+        border-radius: 4px
+        margin: 50px 5px
+        align-self: flex-end
+        font-size: 20px
+
+.color--gray
+  background-color: #4d565c
+  opacity: 0.7
+  color: #fff
+  font-weight: 600
+  outline: none
+  cursor: pointer
+
+.color--green-op1 
+  background-color: #69e4a6
+  color: #fff
+  font-weight: 600
+  outline: none
+  cursor: pointer
+
+
+/*--------CONTRASEÑA ACTUALIZADA  ---------------------------------------------*/
+.contenedor--contraseña__actualizada 
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #cecece
+  width: 100%
+  height: 90vh
+
+.contenedor--ventana-modal
+  display: flex
+  text-align: center
+  align-items: center
+  background: #fff
+  width: 23%
+  height: 40%
+  border-radius: 15px
+  color: #7c7b98
+  font-size: 13px
+  padding: 5px
+
+.icon-cross
+  position: relative
+  top: -90px
+  left: 260px
+  font-size: 16px
+  cursor: pointer
+
+.color--home
+  color: #685FDE
+  font-size: 20px
+  font-weight: 900
+
+.configuracionUsuario
+    grid-row: 1  / 5
+    grid-column: 1 / 3
+    height: 100%
+    justify-content: center
+    align-items: center
+
+/* Ventana modal para editar usuarios--- by Dave------------- */
+.container-edit-modal-user
+  width: 37%
+  box-sizing: border-box
+  overflow: hidden
+  background: rgb(255, 255, 255)
+  min-height: 480px
+  flex-wrap: wrap
+  border-radius: 25px
+  display: flex
+  justify-content: center
+  align-content: flex-start
+  -webkit-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.24)
+  box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.24)
+
+.container-edit-modal-user-content2
+    width: 37%
+    box-sizing: border-box
+    overflow: hidden
+    background: rgb(255, 255, 255)
+    min-height: 440px
+    flex-wrap: wrap
+    border-radius: 50px
+    display: flex
+    justify-content: center
+    align-content: flex-start
+    -webkit-box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.24)
+    box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.24)
+
+.cont-edit-title-question
+  display: flex
+  justify-content: center
+  align-items: center 
+  width: 100%
+  min-height: 5%
+  margin-top: 8%
+
+.item-edit-title-question
+  width: 100%
+  text-align: center
+  font-size: 1.3em
+  font-weight: bold
+
+.div-item-image
+  width: 100%
+  min-height: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 3%
+
+.div-item-image 
+    img
+        width: 100px
+        height: 100px
+        border-radius: 50% 
+
+.div-item-button-rol
+  width: 100%
+  height: 35px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 2%
+
+.item-button-rol
+  min-width: 120px
+  height: 100%
+  background: rgb(35, 193, 255)
+  border: none
+  border-radius: 15px
+  color: white
+  outline: none
+  font-weight: bold
+
+.div-item-name-user
+  width: 100%
+  min-height: 30px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 3%
+  margin-bottom: 1%
+  flex-wrap: wrap
+
+.div-item-name-user 
+    p
+        text-align: center
+        min-height: auto
+        width: 50%
+        font-weight: bold
+
+.section-information
+  display: flex
+  width: 80%
+  flex-wrap: wrap
+  justify-content: flex-start
+  min-height: auto
+  align-content: space-around
+  margin-bottom: 7%
+  margin-top: 2%
+
+.information-item
+  margin-bottom: 2%
+  width: 100%
+  min-height: 20%
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  box-sizing: border-box
+
+.info-item-p1
+  font-weight: bold
+  width: 22%
+  min-height: auto
+
+.info-item-p2
+  width: 76%
+  min-height: auto
+  text-align: left
+
+.div-item-danger
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-bottom: 5%
+
+.div-item-danger 
+    p
+        text-align: center
+        color: red
+        font-weight: bold
+
+.cont-form-button
+  width: 80%
+  height: 35px
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  margin-top: 2%
+
+.cont-form-button 
+    input
+        width: 130px
+        cursor: pointer
+        border-radius: 5px
+
+.cont-form-button-content2
+  width: 80%
+  height: 35px
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  margin-top: 2%
+
+.cont-form-button-content2 
+    input
+        width: 130px
+        cursor: pointer
+        border-radius: 5px
+
+.button-cancel
+  background: none
+  border: 1px solid gray
+  color: gray
+  font-weight: bold
+  outline: none
+
+.button-cancel
+    &:hover
+        border: 1px solid gold
+        color: gold
+
+.button-accept
+  background: rgb(188, 255, 194)
+  font-weight: bold
+  color: white
+  outline: none
+
+.button-accept
+    &:hover
+        background: rgb(47, 255, 64)
+
+.button-accept2
+  background: rgb(188, 255, 194)
+  font-weight: bold
+  color: rgb(255, 255, 255)
+  outline: none
+
+.button-accept2
+    &:hover
+        background: rgb(47, 255, 64)
+
+.button-accept-danger
+  background: rgb(255, 188, 188)
+  font-weight: bold
+  color: white
+  outline: none
+
+.button-accept-danger
+    &:hover
+        background: rgb(255, 0, 0)
