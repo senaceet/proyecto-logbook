@@ -29,21 +29,29 @@
                   <section class="contenedor--inputs__formulario">
                     <form action="" class="contenedor--formulario">
                         <div class="contenedor--nombres">
-                          <input type="text" name="nombre" id="Fname" placeholder="Ingrese primer nombre">
-                          <input type="text" name="nombre" id="sec--name" placeholder="Ingresesegundo nombre">
+                          <input required type="text" name="nombre" id="Fname" placeholder="Primer nombre">
+                          <input required type="text" name="nombre" id="sec--name" placeholder="Segundo nombre">
                         </div>
                         <div class="contenedor--apellidos">
-                          <input type="text" name="nombre" id="Flast--name" placeholder="Ingrese primer apellido">
-                          <input type="text" name="nombre" id="SLast--name" placeholder="Ingrese segundo apellido">
+                          <input required type="text" name="nombre" id="Flast--name" placeholder="Primer apellido">
+                          <input required type="text" name="nombre" id="SLast--name" placeholder="Segundo apellido">
                         </div>
                         <div class="contenedor--password">
-                          <input type="password" name="password--name" id="password--input" placeholder="Contraseña">
-                          <a href="#">¿Olvidaste tu contraseña</a>
+                          <input required type="password" name="password--name" id="password--input" placeholder="Contraseña">
+                          <a class="enlace--contraseña" href="#">¿Olvidaste tu contraseña</a>
                         </div>
                         <div class="contenedor--edad__rh">
-                          <input type="text" name="name--age" id="id--age" placeholder="Edad">
-                          <input type="text" name="name--rh" id="id--rh" placeholder="Rh">
+                          <input required type="text" name="name--age" id="id--age" placeholder="Edad">
+                          <input required type="text" name="name--rh" id="id--rh" placeholder="Rh">
                         </div>
+                        <section class="contenedor--botones ">
+                          <div class="botones--component ">
+                            <input class="button--success" type="submit" value="Aceptar">
+                          </div>
+                          <div class="botones--component">
+                            <input class="button--danger" type="submit" value="Cancelar">
+                          </div>
+                        </section>
                     </form>
                   </section>
                 </section>
