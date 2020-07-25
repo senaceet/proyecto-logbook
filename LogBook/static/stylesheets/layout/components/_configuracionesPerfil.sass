@@ -9,7 +9,7 @@ $fontsize_prof_correo: 19px
 $font-weight: normal
 $fontsize-aprendiz: 12px
 $colorRol-estado: #43425D
-$marginBotom--Rol: 5px
+$margintop--rol_estado: 5px
 //-----Fin Variables SASS----//
 
 .texto--configuracion__perfil
@@ -49,23 +49,47 @@ $marginBotom--Rol: 5px
 
 .contenedor--formulario
     width: 70%
-    height: 50vh
+    height: 70vh
     background: $whitecolor
     .contenedor--rol--estado
         display: flex
-        margin-top: 10px
         font-size: $fontsize-aprendiz
         text-align: center
         justify-content: space-evenly
         .titulo--rol,
         .titulo--estado
-            margin-bottom: $marginBotom--Rol
             color: $colorRol-estado
 
 .estado
+    margin-top: $margintop--rol_estado
     color: #25D366
-    rol
+    .rol
+        margin-top: $margintop--rol_estado
         color: #43425D
+
+.contenedor--inputs__formulario
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-top: 20px
+    input[type="text"],
+    input[type="password"]
+       display: inline-block
+       padding: 10px
+       margin: 20px
+       border: none
+       border-bottom: 2px solid #E9E9F0
+       outline: none
+
+input[type="text"]:focus
+    border-bottom: 2px solid #685FDE
+
+
+
+
+
+
+
 
 
 
