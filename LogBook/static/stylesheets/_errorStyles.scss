@@ -1,0 +1,75 @@
+.body--error {  
+  width: 95%;
+  height: 30vh;
+  background-color: #efefef;
+  color: #2e2f30;
+  text-align: center;
+  font-family: arial, sans-serif;
+  margin: 0;
+}
+  
+
+.body--error .div--dialogError {
+  width: 95%;
+  height: 50vh;
+  max-width: 33em;
+  margin: 4em auto 0;
+}
+
+
+.body--error .div--dialogError div {
+
+  height: 60vh;
+  border-top: #685FDE solid 4px;
+  border-bottom: #685FDE solid 4px;
+  background-color: #e3e3e3;
+  padding: 7px 12% 0;
+  -webkit-box-shadow: 6px 6px 21px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 21px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 21px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+}
+
+
+.body--error h1 {
+  color: #685FDE;
+  line-height: 1.5em;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+
+.body--error .div--dialogError p {
+
+  height: 12vh;
+  padding: 5px;
+  margin-bottom: 0px;
+  background-color: #000;
+  color: #FFF;
+  font-size: 1.7em;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.color--azul {
+  color: #81B4E7;
+  font-size: 1em;  
+}
+
+.color--rojo {
+  color: #E0687A;
+  font-size: 1em;
+}
+.color--verde {
+  color: #9FBE81;
+  font-size: 1em;
+}
+
+.regresar--home { 
+  color: #FFF;
+  border-radius: 5px;
+  background-color: #685FDE;
+  padding: 10px 17px;
+  margin-top: 20px;
+  text-decoration: none;
+}

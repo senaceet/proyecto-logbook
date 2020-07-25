@@ -1,0 +1,106 @@
+@import './_variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $sourceFont;
+}
+
+
+html, body {
+    background-color: $bgColor;
+    height: 100%;
+    width: 100%;
+}
+    
+@import './_errorStyles';
+@import './layout/_landing';
+
+//Dashboard componets
+@import './layout/dashBoard/_layout-render';
+@import './layout/dashBoard/_navBar';
+@import './layout/dashBoard/_verticalNav';
+
+//Render components, el render son los componentes dinámicos que se renderizan 
+@import './layout/components/_renderTemplatesZone';
+@import './layout/components/_wellcome';
+@import './layout/components/_cambioContra';
+@import './layout/components/_configuracionesPerfil';
+@import './layout/components/_detallesPerfil';
+@import './layout/components/_formOpinion';
+@import './layout/components/_pagination';
+@import './layout/components/_recuperarContra';
+@import './layout/components/_results';
+@import './layout/components/_scrollBar';
+@import './layout/components/_footer';
+
+@media only screen and (max-width: 1100px) {
+    .ul--menu--1 {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    .input--seach {
+      width: 50px;
+      padding-left: 50px;
+      font-size: 20px;
+      height: 30px;
+      border-bottom: 1px solid #ebebf2;
+    }
+  
+    .li--itemSvg {
+      margin-left: 20px;
+    }
+  
+    .li--item--search {
+      margin-right: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .ul--menu--1 {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    .input--seach {
+      width: 50px;
+      margin-right: 50px;
+      font-size: 20px;
+      height: 30px;
+      border-bottom: 1px solid #ebebf2;
+    }
+  
+    .li--itemSvg {
+      margin-left: 10px;
+    }
+  
+    .section--container {
+      overflow: auto;
+      margin-left: 30%;
+      height: 100vh;
+      width: 70%;
+      padding: 20px;
+      background-color: #f2f2f2;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 50px repeat(8, 150px) 50px;
+      align-items: center;
+      column-gap: 1em;
+      row-gap: 2em;
+    }
+    .p--textResult {
+      font-size: 30px;
+      color: #43425d;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+    }
+  
+    .section--pagination {
+      grid-column: 1 / 2;
+      grid-row: 8 / 9;
+      background-color: #f2f2f2;
+    }}
