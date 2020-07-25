@@ -1,62 +1,32 @@
 {% extends 'dashboard.html'%}
 {% block content %}
             <div class="configuracionUsuario" id="IdconfiguracionUsuario">
-                <h2 class="texto--configuracion__perfil">Configuración de tu perfil.</h2>
-                <div class="formulario--contenedor__formulario">
-                    <form action="#" id="#" class="formulario">
-                        <div class="formulario--contenedor-uno">
-                          <label for="primer--apellido">Primer apellido</label>
-                          <input type="text" name="primer--apellido"  disabled>
-                          <label for="primer--nombre">Primer nombre</label>
-                          <input type="text" name="primer--nombre" id="first--name" disabled>
-                          <label for="rh">RH</label>
-                          <input type="text" name="rh" id="grupo--sangre" disabled>  
-                          <div id="password" class="CambiarContrasena">
-                            <i class='bx bxs-pencil' ></i>
-                            <div class="contrasena"></div>
-                          </div>
-                        </label>
-                          <label for="correo-sena">Correo mi Sena</label>
-                          <input type="email" name="correo-sena" id="correo-institucional" disabled>
-                        </div>
-                        <div class="formulario--contenedor-dos">
-                          <label for="segundo-apellido">Segundo apellido</label>
-                          <input type="text" name="segundo-apellido"  disabled>
-                          <label for="segundo-nombre">Segundo nombre</label>
-                          <input type="text" name="segundo-nombre" id="second-name" disabled>
-                            <div class="contenedor--tipo__documento">
-                              <select name="tipo-documento" id="document-type" disabled>
-                                <label for="tipo-documento">Tipo Documento</label>
-                                <option value="1">CC</option> 
-                                <option value="2">TI</option> 
-                                <option value="3">CE</option>
-                              </select>
-                              <input type="text" name="tipo--documento" id="document--type" disabled>
-                            </div>
-                            <label for="edad">Edad</label>
-                            <input type="text" name="edad" id="age" disabled>
-                        </div>
-                    </form>
-                    <section class="contenedor--foto__perfil">
-                        <div class="contenedor--foto">
-                          <img class="foto--perfil" src="https://i.ibb.co/VVQL4Mz/dX.jpg" alt="Imagen usuario">
-                        </div>
-                        <div class="contenedor--btn">
-                            <button class="btn--cambiar-img" type="submit">Cambiar tu imagen de perfil</button>
-                        </div>
-                    </section>
-                    <section class="contenedor--roles">
-                        <div class="contenedor--rol-estado">
-                            <label for="btn--rol">Tu rol en la institución</label>
-                            <button class="btn-color-azul" type="submit" class="btn-rol">Aprendiz</button>
-                            <label for="btn--estado">Tu estado en la institución</label>
-                            <button class="btn-color-verde" type="submit" class="btn--estado">Activo</button>
-                        </div>
-                    </section>
-                    <section class="contenedor--acciones">
-                        <button class="color--transparente" type="submit">Guardar cambios</button>
-                        <button class="color--transparent" type="submit">Cancelar</button>
-                    </section>
-                </div>
+                <h1 class="texto--configuracion__perfil">Configuración de tu perfil.</h1>
+                <section class="header--configperfil">
+                  <div class="contenedor--nombre">
+                    <h2 class="nombre--perfil">Camila Alejandra Paredes osorio</h2>
+                  </div>
+                  <div class="perfil--contenedor__profesion">
+                    <div class="contenedor--profesion">
+                      <h2 class="profesion--perfil">Técnico en turismo</h2>
+                    </div>
+                    <div class="contenedor--correo">
+                      <h2 class="correo--perfil">caparedes32@misena.edu.co</h2>
+                    </div>
+                  </div>
+                </section>
+                <section class="contenedor--formulario">
+                  <div class="contenedor--rol--estado">
+                    <div class="contenedor-aprndiz">
+
+                    </div>
+                    <div>
+                      
+                    </div>
+
+                  </div>
+
+                </section>
+
             </div>
 {% endblock %}

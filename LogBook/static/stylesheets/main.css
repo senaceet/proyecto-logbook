@@ -755,6 +755,47 @@ i {
   text-align: center;
 }
 
+.texto--configuracion__perfil {
+  color: #43425D;
+}
+
+.header--configperfil {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #685FDE;
+  width: 70%;
+  height: 20vh;
+}
+.header--configperfil .nombre--perfil {
+  margin-bottom: 10px;
+  font-family: "Source Sans Pro";
+  color: #FFFBFB;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.perfil--contenedor__profesion {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.profesion--perfil {
+  color: #FFFBFB;
+  font-size: 19px;
+  margin-right: 100px;
+  font-weight: normal;
+}
+
+.correo--perfil {
+  font-size: 19px;
+  color: #FFFBFB;
+  font-weight: normal;
+}
+
 .div--contenedorOpiniones {
   position: relative;
   display: grid;
