@@ -767,7 +767,7 @@ i {
   align-items: center;
   background: #685FDE;
   width: 70%;
-  height: 20vh;
+  height: 15vh;
 }
 .header--configperfil .nombre--perfil {
   margin-bottom: 10px;
@@ -794,6 +794,30 @@ i {
   font-size: 19px;
   color: #FFFBFB;
   font-weight: normal;
+}
+
+.contenedor--formulario {
+  width: 70%;
+  height: 50vh;
+  background: #FFFBFB;
+}
+.contenedor--formulario .contenedor--rol--estado {
+  display: flex;
+  font-size: 12px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.contenedor--formulario .contenedor--rol--estado .titulo--rol,
+.contenedor--formulario .contenedor--rol--estado .titulo--estado {
+  margin-bottom: 5px;
+  color: #43425D;
+}
+
+.estado {
+  color: #25D366;
+}
+.estado rol {
+  color: #43425D;
 }
 
 .div--contenedorOpiniones {

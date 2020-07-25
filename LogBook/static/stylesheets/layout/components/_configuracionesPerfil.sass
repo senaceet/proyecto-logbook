@@ -7,6 +7,9 @@ $titleconfigperfilcolor: #43425D
 $fontsize: 30px
 $fontsize_prof_correo: 19px
 $font-weight: normal
+$fontsize-aprendiz: 12px
+$colorRol-estado: #43425D
+$marginBotom--Rol: 5px
 //-----Fin Variables SASS----//
 
 .texto--configuracion__perfil
@@ -20,7 +23,7 @@ $font-weight: normal
     align-items: center
     background: $headercolorpurple
     width: 70%
-    height: 20vh
+    height: 15vh
     .nombre--perfil
         margin-bottom: 10px
         font-family: 'Source Sans Pro'
@@ -43,6 +46,28 @@ $font-weight: normal
     font-size: $fontsize_prof_correo
     color: $whitecolor
     font-weight: $font-weight
+
+.contenedor--formulario
+    width: 70%
+    height: 50vh
+    background: $whitecolor
+    .contenedor--rol--estado
+        display: flex
+        font-size: $fontsize-aprendiz
+        text-align: center
+        justify-content: space-evenly
+        .titulo--rol,
+        .titulo--estado
+            margin-bottom: $marginBotom--Rol
+            color: $colorRol-estado
+
+.estado
+    color: #25D366
+    rol
+        color: #43425D
+
+
+
 
             
         
