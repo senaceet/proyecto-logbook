@@ -803,6 +803,7 @@ i {
 }
 .contenedor--formulario .contenedor--rol--estado {
   display: flex;
+  margin-top: 10px;
   font-size: 12px;
   text-align: center;
   justify-content: space-evenly;
