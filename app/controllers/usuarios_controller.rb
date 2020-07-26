@@ -4,6 +4,14 @@ class UsuariosController < ApplicationController
 
 
     def create
-        render plain: params[].inspect
+        #render plain: params[:usuarios].inspect
+        @usuario = Usuario.new usuarios_params
+        @usuario.save
+    end
+
+    private
+
+    def usuarios_params
+        params.require(:usuarios).permit(:value)
     end
 end

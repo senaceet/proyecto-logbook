@@ -1,5 +1,7 @@
     <section class="main-form-section">
-        <form  class="form-container">
+
+    <%= form_for :usuarios, url: usuarios_path do |f| %>
+<div class="form-container">
             <div class="form-text">
                 <a href="./index.html">LogBook</a>
                 <p>Por favor completa los campos para crear tu cuenta</p>
@@ -25,17 +27,18 @@
             </div>
             <div class="form-item-validacion">
                 <div class="item-check">
-                    <input type="checkbox" class="form--validacion" id="Deacuerdo" required>
-                    <label for="Deacuerdo"> Estoy de acuerdo con los términos y condiciones</label>
+                  <%= f.check_box :paid, {:class =>"form--validacion", :required => true} %>
+                    <label for="Deacuerdo"> Estoy de acuerdo con los  <a href="./loggin.html">términos y condiciones</a></label>
                 </div>
             </div>
             <div class="div-item-button">
-                <input type="submit" value="Registrate" class="item-button">
+                <%= f.submit %>
             </div>
             <div class="div-item-answer">
                 <a href="./loggin.html"> ¿Ya tienes cuenta? Ingresa aquí.</a>
             </div>
-        </form>
+            </div>
+    <%end%>
         <div class="item-terms">
             <a href="./index.html">Terminos de uso. Politica de privacidad</a>
         </div>
