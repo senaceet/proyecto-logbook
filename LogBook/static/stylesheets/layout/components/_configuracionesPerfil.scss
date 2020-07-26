@@ -26,14 +26,15 @@ $successColor: #28a745;
 }
 
 .header--configperfil {
+  position: relative;
   padding: 10px;
   display: flex;
   border-radius: 5px;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   background: $headercolorpurple;
   width: 70%;
+  max-height: 150px;
   .nombre--perfil {
     width: 100%;
     margin-bottom: 10px;
@@ -64,6 +65,18 @@ $successColor: #28a745;
   font-size: $fontsize_prof_correo;
   color: $whitecolor;
   font-weight: $font-weight;
+}
+
+.contenedorImg--perfil{
+ position: relative;
+ transform: translateY(5px);
+}
+.imagen--perfil{
+    border: 6px solid $whitecolor;
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
 }
 
 .contenedor--formulario {
@@ -105,7 +118,7 @@ $successColor: #28a745;
     width: 42%;
     display: inline-block;
     padding: 10px;
-    margin: 20px 20px;
+    margin: 10px 20px;
     border: none;
     border-bottom: 2px solid #e9e9f0;
     outline: none;
