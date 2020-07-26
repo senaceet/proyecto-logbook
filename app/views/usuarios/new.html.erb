@@ -3,7 +3,7 @@
     <%= form_for :usuarios, url: usuarios_path do |f| %>
 <div class="form-container">
             <div class="form-text">
-                <a href="./index.html">LogBook</a>
+                <%= link_to "LogBook", 'https://log-book-landing.vercel.app/'%>
                 <p>Por favor completa los campos para crear tu cuenta</p>
             </div>
             <div class="div-item-names">
@@ -32,14 +32,14 @@
                 </div>
             </div>
             <div class="div-item-button">
-                <%= f.submit %>
+                <%= f.submit "Registrarse" %>
             </div>
             <div class="div-item-answer">
-                <a href="./loggin.html"> ¿Ya tienes cuenta? Ingresa aquí.</a>
+            <%= link_to "¿Ya tienes cuenta?", root_path%>
             </div>
             </div>
     <%end%>
         <div class="item-terms">
-            <a href="./index.html">Terminos de uso. Politica de privacidad</a>
+            <%= link_to "Terminos de uso. Politica de privacidad",'https://log-book-landing.vercel.app/terminos'%>
         </div>
     </section>
