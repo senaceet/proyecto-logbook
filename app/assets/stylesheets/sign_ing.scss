@@ -4,7 +4,11 @@
     box-sizing: border-box;
     font-family:  sans-serif;
 }
-
+body{
+    display: flex;
+    flex-direction: row-reverse;
+    background: #F2F2F2;
+}
 .section-container-form{
     width: 50%;
     height: 100vh;
