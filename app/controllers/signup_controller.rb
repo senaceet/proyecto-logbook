@@ -1,4 +1,5 @@
 class SignupController < ApplicationController
-    def signUp
+    def new
+        
     end
 end
