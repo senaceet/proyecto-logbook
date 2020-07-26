@@ -830,7 +830,8 @@ i {
 }
 
 .texto--configuracion__perfil {
-  color: #43425D;
+  color: #43425d;
+  font-size: 20px;
 }
 
 .header--configperfil {
@@ -840,14 +841,14 @@ i {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: #685FDE;
-  width: 90%;
+  background: #685fde;
+  width: 70%;
 }
 .header--configperfil .nombre--perfil {
   width: 100%;
   margin-bottom: 10px;
   font-family: "Source Sans Pro";
-  color: #FFF;
+  color: #fff;
   font-size: 30px;
   font-weight: bold;
 }
@@ -861,7 +862,7 @@ i {
 
 .profesion--perfil {
   width: 100%;
-  color: #FFF;
+  color: #fff;
   font-size: 19px;
   margin-right: 100px;
   font-weight: normal;
@@ -870,15 +871,14 @@ i {
 .correo--perfil {
   width: 100%;
   font-size: 19px;
-  color: #FFF;
+  color: #fff;
   font-weight: normal;
 }
 
 .contenedor--formulario {
-  background: #000;
-  width: 90%;
+  width: 70%;
   padding: 10px;
-  background: #FFF;
+  background: #fff;
 }
 .contenedor--formulario .contenedor--rol--estado {
   display: flex;
@@ -888,18 +888,18 @@ i {
 }
 .contenedor--formulario .contenedor--rol--estado .titulo--rol,
 .contenedor--formulario .contenedor--rol--estado .titulo--estado {
-  color: #43425D;
+  color: #43425d;
 }
 
 .estado {
   width: 100%;
   margin-top: 5px;
-  color: #25D366;
+  color: #25d366;
 }
 .estado .rol {
   width: 100%;
   margin-top: 5px;
-  color: #43425D;
+  color: #43425d;
 }
 
 .contenedor--inputs__formulario {
@@ -912,34 +912,44 @@ i {
 }
 .contenedor--inputs__formulario input[type=text],
 .contenedor--inputs__formulario input[type=password] {
-  width: 40%;
+  width: 42%;
   display: inline-block;
   padding: 10px;
   margin: 20px 20px;
   border: none;
-  border-bottom: 2px solid #E9E9F0;
+  border-bottom: 2px solid #e9e9f0;
   outline: none;
 }
-.contenedor--inputs__formulario input[type=text] .contenedor--password,
-.contenedor--inputs__formulario input[type=text] .enlace--contraseña,
-.contenedor--inputs__formulario input[type=password] .contenedor--password,
-.contenedor--inputs__formulario input[type=password] .enlace--contraseña {
+.contenedor--inputs__formulario .contenedor--password,
+.contenedor--inputs__formulario .enlace--contraseña {
   margin: 20px;
+}
+.contenedor--inputs__formulario .enlace--contraseña:hover {
+  text-decoration: underline;
+}
+
+.fa-edit {
+  font-weight: 500;
+  background-color: #43425d;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
 }
 
 input[type=password]:focus {
-  border-bottom: 2px solid #685FDE;
+  border-bottom: 2px solid #685fde;
 }
 
 input[type=text]:focus {
-  border-bottom: 2px solid #685FDE;
+  border-bottom: 2px solid #685fde;
 }
 
 .contenedor--botones {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .botones--component {
@@ -951,13 +961,13 @@ input[type=text]:focus {
   outline: none;
   border: none;
   cursor: pointer;
-  border: 1px solid #28A745;
-  color: #28A745;
+  border: 1px solid #28a745;
+  color: #28a745;
   border-radius: 3px;
 }
 .botones--component .button--success:hover {
-  background-color: #28A745;
-  color: #FFF;
+  background-color: #28a745;
+  color: #fff;
   font-weight: 600;
 }
 .botones--component .button--danger {
@@ -966,13 +976,13 @@ input[type=text]:focus {
   outline: none;
   border: none;
   cursor: pointer;
-  border: 1px solid #DC3545;
-  color: #DC3545;
+  border: 1px solid #dc3545;
+  color: #dc3545;
   border-radius: 3px;
 }
 .botones--component .button--danger:hover {
-  background-color: #DC3545;
-  color: #FFF;
+  background-color: #dc3545;
+  color: #fff;
   font-weight: 600;
 }
 

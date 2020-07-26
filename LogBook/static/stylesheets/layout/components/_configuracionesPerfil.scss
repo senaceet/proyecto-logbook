@@ -1,205 +1,179 @@
 //*-------------------------------- Configuraciones de perfil --------------------------------------------*//
 
 //*-------Variables SASS------*//
-$headercolorpurple: #685FDE;
-$whitecolor: #FFF;;
-$titleconfigperfilcolor: #43425D;
+$headercolorpurple: #685fde;
+$whitecolor: #fff;
+$titleconfigperfilcolor: #43425d;
 $fontsize: 30px;
 $fontsize_prof_correo: 19px;
 $font-weight: normal;
 $fontsize-aprendiz: 12px;
-$colorRol-estado: #43425D;
+$colorRol-estado: #43425d;
 $margintop--rol_estado: 5px;
 $margin20: 20px;
-$dangerColor:  #DC3545;
-$successColor: #28A745;
+$dangerColor: #dc3545;
+$successColor: #28a745;
 
-.configuracionUsuario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.configuracionUsuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.texto--configuracion__perfil{
-    color: $titleconfigperfilcolor;
+.texto--configuracion__perfil {
+  color: $titleconfigperfilcolor;
+  font-size: 20px;
 }
 
-.header--configperfil{
-    padding: 10px;
-    display: flex;
-    border-radius: 5px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background: $headercolorpurple;
-    width: 90%;
-    .nombre--perfil{
-        width: 100%;
-        margin-bottom: 10px;
-        font-family: 'Source Sans Pro';
-        color: $whitecolor;
-        font-size: $fontsize;
-       font-weight: bold;
-
-}}
-
-.perfil--contenedor__profesion{
+.header--configperfil {
+  padding: 10px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: $headercolorpurple;
+  width: 70%;
+  .nombre--perfil {
     width: 100%;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-}
-
-.profesion--perfil{
-    width: 100%;
+    margin-bottom: 10px;
+    font-family: "Source Sans Pro";
     color: $whitecolor;
-    font-size: $fontsize_prof_correo;
-    margin-right: 100px;
-    font-weight: $font-weight;
+    font-size: $fontsize;
+    font-weight: bold;
+  }
 }
 
-.correo--perfil{
-    width: 100%;
-    font-size: $fontsize_prof_correo;
-    color: $whitecolor;
-    font-weight: $font-weight;
-
+.perfil--contenedor__profesion {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
 }
 
-.contenedor--formulario{
-    background: #000;
-    width: 90%;
-    padding: 10px;
-    background: $whitecolor;
-    .contenedor--rol--estado{
-        display: flex;
-        font-size: $fontsize-aprendiz;
-        text-align: center;
-        justify-content: space-evenly;
-        .titulo--rol,
-        .titulo--estado{
-            color: $colorRol-estado;
-}}}
+.profesion--perfil {
+  width: 100%;
+  color: $whitecolor;
+  font-size: $fontsize_prof_correo;
+  margin-right: 100px;
+  font-weight: $font-weight;
+}
 
-.estado{
+.correo--perfil {
+  width: 100%;
+  font-size: $fontsize_prof_correo;
+  color: $whitecolor;
+  font-weight: $font-weight;
+}
+
+.contenedor--formulario {
+  width: 70%;
+  padding: 10px;
+  background: $whitecolor;
+  .contenedor--rol--estado {
+    display: flex;
+    font-size: $fontsize-aprendiz;
+    text-align: center;
+    justify-content: space-evenly;
+    .titulo--rol,
+    .titulo--estado {
+      color: $colorRol-estado;
+    }
+  }
+}
+
+.estado {
+  width: 100%;
+  margin-top: $margintop--rol_estado;
+  color: #25d366;
+  .rol {
     width: 100%;
     margin-top: $margintop--rol_estado;
-    color: #25D366;
-    .rol{
-        width: 100%;
-        margin-top: $margintop--rol_estado;
-        color: #43425D;
-}}
-
-.contenedor--inputs__formulario{
-    width: 100%;
-    height: 450px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-    input[type="text"],
-    input[type="password"]{
-       width: 40%;
-       display: inline-block;
-       padding: 10px;
-       margin: 20px 20px;
-       border: none;
-       border-bottom: 2px solid #E9E9F0;
-       outline: none;
-    .contenedor--password,
-        .enlace--contraseña{
-            margin: $margin20;
-}}}
-
-input[type="password"]:focus{
-    border-bottom: 2px solid #685FDE;
+    color: #43425d;
+  }
 }
 
-input[type="text"]:focus{
-    border-bottom: 2px solid #685FDE;
-}
-
-.contenedor--botones{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-}
-
-.botones--component{
+.contenedor--inputs__formulario {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  input[type="text"],
+  input[type="password"] {
+    width: 42%;
     display: inline-block;
-    .button--success{
-        padding: 10px 40px;
-        background: none;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border: 1px solid $successColor;
-        color: $successColor;
-        border-radius: 3px;
-    }
-        .button--success:hover{
-           background-color: $successColor;
-           color: $whitecolor;
-           font-weight: 600;
-        }
-    .button--danger{
-        padding: 10px 40px;
-        background: none;
-        outline: none;
-        border: none;
-        cursor: pointer;  
-        border: 1px solid $dangerColor;
-        color: $dangerColor;
-        border-radius: 3px;
-    }
-        .button--danger:hover{
-            background-color: $dangerColor;
-            color: $whitecolor;
-            font-weight: 600;
-            
-        }
+    padding: 10px;
+    margin: 20px 20px;
+    border: none;
+    border-bottom: 2px solid #e9e9f0;
+    outline: none;
+  }
+  .contenedor--password,
+  .enlace--contraseña {
+    margin: $margin20;
+  }
+
+  .enlace--contraseña:hover {
+    text-decoration: underline;
+  }
 }
 
+.fa-edit {
+  font-weight: 500;
+  background-color: $colorRol-estado;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: $whitecolor;
+}
 
- 
- 
- 
+input[type="password"]:focus {
+  border-bottom: 2px solid #685fde;
+}
 
+input[type="text"]:focus {
+  border-bottom: 2px solid #685fde;
+}
 
-    
-        
+.contenedor--botones {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-            
-        
-            
-
-
-          
-            
-
-
-
-    
-   
-  
-     
-
-
-
-
-
-   
-
-
-
+.botones--component {
+  display: inline-block;
+  .button--success {
+    padding: 10px 40px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border: 1px solid $successColor;
+    color: $successColor;
+    border-radius: 3px;
+  }
+  .button--success:hover {
+    background-color: $successColor;
+    color: $whitecolor;
+    font-weight: 600;
+  }
+  .button--danger {
+    padding: 10px 40px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border: 1px solid $dangerColor;
+    color: $dangerColor;
+    border-radius: 3px;
+  }
+  .button--danger:hover {
+    background-color: $dangerColor;
+    color: $whitecolor;
+    font-weight: 600;
+  }
+}

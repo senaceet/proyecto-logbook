@@ -37,7 +37,7 @@
                           <input required type="text" name="nombre" id="SLast--name" placeholder="Segundo apellido">
                         </div>
                         <div class="contenedor--password">
-                          <input required type="password" name="password--name" id="password--input" placeholder="Contraseña">
+                          <input required type="password" name="password--name" id="password--input" placeholder="Contraseña"><i class="fa fa-pencil-alt"></i>
                           <a class="enlace--contraseña" href="#">¿Olvidaste tu contraseña</a>
                         </div>
                         <div class="contenedor--edad__rh">
@@ -52,6 +52,8 @@
                             <input class="button--danger" type="submit" value="Cancelar">
                           </div>
                         </section>
+                        {% block buttons %}
+                        {% endblock %}
                     </form>
                   </section>
                 </section>
