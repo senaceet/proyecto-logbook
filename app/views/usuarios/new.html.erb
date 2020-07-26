@@ -1,7 +1,6 @@
     <section class="main-form-section">
-
     <%= form_for :usuarios, url: usuarios_path do |f| %>
-<div class="form-container">
+    <div class="form-container">
             <div class="form-text">
                 <%= link_to "LogBook", 'https://log-book-landing.vercel.app/'%>
                 <p>Por favor completa los campos para crear tu cuenta</p>
@@ -28,11 +27,11 @@
             <div class="form-item-validacion">
                 <div class="item-check">
                   <%= f.check_box :paid, {:class =>"form--validacion", :required => true} %>
-                    <label for="Deacuerdo"> Estoy de acuerdo con los  <a href="./loggin.html">términos y condiciones</a></label>
+                    <label for="Deacuerdo"> Estoy de acuerdo con los  <%= link_to "terminos y condiciones",'https://log-book-landing.vercel.app/terminos'%></label>
                 </div>
             </div>
             <div class="div-item-button">
-                <%= f.submit "Registrarse" %>
+                <%= f.submit "Registrarse", :class => "algo" %>
             </div>
             <div class="div-item-answer">
             <%= link_to "¿Ya tienes cuenta?", root_path%>

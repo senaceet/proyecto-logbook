@@ -14,12 +14,12 @@
                     <label for="validar"> Recuerdame</label>
                 </div>
                 <div class="item-recover">
-                    <a href="">¿Olvidaste tu contraseña?</a>
+                    <%= link_to "¿Olvidaste tu contraseña?", '/recuperar'%>
                 </div>
             </div>
             <div class="form-container-submit">
                 <input type="submit" value="Ingresar" class="form--submit sub1">
-                <a href="" class="form--submit sub2">Registrarse</a>
+                <%= link_to "Registrarse", 'usuarios/new', :class => 'form--submit sub2'%>
             </div>
 
         </form>
