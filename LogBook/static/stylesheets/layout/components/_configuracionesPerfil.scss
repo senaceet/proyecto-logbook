@@ -1,123 +1,167 @@
 //*-------------------------------- Configuraciones de perfil --------------------------------------------*//
 
 //*-------Variables SASS------*//
-$headercolorpurple: #685FDE 
-$whitecolor: #FFF
-$titleconfigperfilcolor: #43425D
-$fontsize: 30px
-$fontsize_prof_correo: 19px
-$font-weight: normal
-$fontsize-aprendiz: 12px
-$colorRol-estado: #43425D
-$margintop--rol_estado: 5px
-$margin20: 20px
-$dangerColor:  #DC3545
-$successColor: #28A745
+$headercolorpurple: #685FDE;
+$whitecolor: #FFF;;
+$titleconfigperfilcolor: #43425D;
+$fontsize: 30px;
+$fontsize_prof_correo: 19px;
+$font-weight: normal;
+$fontsize-aprendiz: 12px;
+$colorRol-estado: #43425D;
+$margintop--rol_estado: 5px;
+$margin20: 20px;
+$dangerColor:  #DC3545;
+$successColor: #28A745;
 
-.configuracionUsuario
-    margin-top: 40px
-    display: flex
-    flex-direction: column
+.configuracionUsuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.texto--configuracion__perfil
-    color: $titleconfigperfilcolor
+.texto--configuracion__perfil{
+    color: $titleconfigperfilcolor;
+}
 
-.header--configperfil
-    padding: 10px
-    display: flex
-    justify-content: center
-    flex-direction: column
-    align-items: center
-    background: $headercolorpurple
-    width: 70%
-    height: 15vh
-    .nombre--perfil
-        margin-bottom: 10px
-        font-family: 'Source Sans Pro'
-        color: $whitecolor
-        font-size: $fontsize
-        font-weight: $font-weight
+.header--configperfil{
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: $headercolorpurple;
+    width: 90%;
+    .nombre--perfil{
+        width: 100%;
+        margin-bottom: 10px;
+        font-family: 'Source Sans Pro';
+        color: $whitecolor;
+        font-size: $fontsize;
+       font-weight: bold;
 
-.perfil--contenedor__profesion
-    justify-content: center
-    display: flex
-    flex-direction: row
+}}
 
-.profesion--perfil
-    color: $whitecolor
-    font-size: $fontsize_prof_correo
-    margin-right: 100px
-    font-weight: $font-weight
+.perfil--contenedor__profesion{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
 
-.correo--perfil
-    font-size: $fontsize_prof_correo
-    color: $whitecolor
-    font-weight: $font-weight
+.profesion--perfil{
+    width: 100%;
+    color: $whitecolor;
+    font-size: $fontsize_prof_correo;
+    margin-right: 100px;
+    font-weight: $font-weight;
+}
 
-.contenedor--formulario
-    width: 70%
-    height: 80vh
-    padding: 10px
-    background: $whitecolor
-    .contenedor--rol--estado
-        display: flex
-        font-size: $fontsize-aprendiz
-        text-align: center
-        justify-content: space-evenly
+.correo--perfil{
+    width: 100%;
+    font-size: $fontsize_prof_correo;
+    color: $whitecolor;
+    font-weight: $font-weight;
+
+}
+
+.contenedor--formulario{
+    background: #000;
+    width: 90%;
+    padding: 10px;
+    background: $whitecolor;
+    .contenedor--rol--estado{
+        display: flex;
+        font-size: $fontsize-aprendiz;
+        text-align: center;
+        justify-content: space-evenly;
         .titulo--rol,
-        .titulo--estado
-            color: $colorRol-estado
+        .titulo--estado{
+            color: $colorRol-estado;
+}}}
 
-.estado
-    margin-top: $margintop--rol_estado
-    color: #25D366
-    .rol
-        margin-top: $margintop--rol_estado
-        color: #43425D
+.estado{
+    width: 100%;
+    margin-top: $margintop--rol_estado;
+    color: #25D366;
+    .rol{
+        width: 100%;
+        margin-top: $margintop--rol_estado;
+        color: #43425D;
+}}
 
-.contenedor--inputs__formulario
-    width: 100%
-    display: flex
-    justify-content: space-evenly
-    margin-top: 20px
+.contenedor--inputs__formulario{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
     input[type="text"],
-    input[type="password"]
-       width: 40%
-       display: inline-block
-       padding: 10px
-       margin: 20px 20px
-       border: none
-       border-bottom: 2px solid #E9E9F0
-       outline: none
-    .contenedor--password
-        .enlace--contraseña
-            margin: $margin20
-            :hover
-                color: $headercolorpurple
+    input[type="password"]{
+       width: 40%;
+       display: inline-block;
+       padding: 10px;
+       margin: 20px 20px;
+       border: none;
+       border-bottom: 2px solid #E9E9F0;
+       outline: none;
+    .contenedor--password,
+        .enlace--contraseña{
+            margin: $margin20;
+}}}
 
-input[type="password"]:focus
-    border-bottom: 2px solid #685FDE
+input[type="password"]:focus{
+    border-bottom: 2px solid #685FDE;
+}
 
-input[type="text"]:focus
-    border-bottom: 2px solid #685FDE
+input[type="text"]:focus{
+    border-bottom: 2px solid #685FDE;
+}
 
-.contenedor--botones
-    width: 100%
-    display: flex
-    justify-content: space-around
-    margin-top: 40px
+.contenedor--botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
 
-.botones--component
-    display: inline-block
-    .button--success,
-    .button--danger
-        padding: 10px 40px
-        background: none
-        outline: none
-        border: none
-        cursor: pointer
-        border: 1px solid $successColor
-        color: $successColor
+.botones--component{
+    display: inline-block;
+    .button--success{
+        padding: 10px 40px;
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        border: 1px solid $successColor;
+        color: $successColor;
+        border-radius: 3px;
+    }
+        .button--success:hover{
+           background-color: $successColor;
+           color: $whitecolor;
+           font-weight: 600;
+        }
+    .button--danger{
+        padding: 10px 40px;
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;  
+        border: 1px solid $dangerColor;
+        color: $dangerColor;
+        border-radius: 3px;
+    }
+        .button--danger:hover{
+            background-color: $dangerColor;
+            color: $whitecolor;
+            font-weight: 600;
+            
+        }
+}
+
 
  
  
