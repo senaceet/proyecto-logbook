@@ -133,10 +133,11 @@ $successColor: #28a745;
   }
 }
 
-.fa-edit {
+.fa-pencil-alt {
   font-weight: 500;
   background-color: $colorRol-estado;
-  padding: 10px;
+  padding: 7px;
+  font-size: 10px;
   border-radius: 50%;
   cursor: pointer;
   color: $whitecolor;
@@ -190,3 +191,4 @@ input[type="text"]:focus {
     font-weight: 600;
   }
 }
+

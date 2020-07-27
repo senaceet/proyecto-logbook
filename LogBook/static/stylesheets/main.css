@@ -942,10 +942,11 @@ i {
   text-decoration: underline;
 }
 
-.fa-edit {
+.fa-pencil-alt {
   font-weight: 500;
   background-color: #43425d;
-  padding: 10px;
+  padding: 7px;
+  font-size: 10px;
   border-radius: 50%;
   cursor: pointer;
   color: #fff;
