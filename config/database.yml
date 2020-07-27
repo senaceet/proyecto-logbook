@@ -51,8 +51,9 @@ development:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-#production:
-#  <<: *default
-#  database: LogBook_production
-#  username: LogBook
-#  password: <%= ENV['LOGBOOK_DATABASE_PASSWORD'] %>
+production:
+  development:
+  adapter: mysql2
+  database: LogBook
+  username: root
+  password: 123456789a
