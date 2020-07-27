@@ -1,0 +1,44 @@
+    <section class="main-form-section">
+    <%= form_for :usuarios, url: usuarios_path do |f| %>
+    <div class="form-container">
+            <div class="form-text">
+                <%= link_to "LogBook", 'https://log-book-landing.vercel.app/'%>
+                <p>Por favor completa los campos para crear tu cuenta</p>
+            </div>
+            <div class="div-item-names">
+                <input class="item-type1" type="text" name="firstName"  id="uno" placeholder="Primer nombre" required>
+                <input class="item-type1" type="text" name="secondName" placeholder="Segundo nombre">
+            </div>
+            <div class="div-item-lastname">
+                <input class="item-type1" type="text" name="firstLastName"  placeholder="Primer apellido" >
+                <input class="item-type1" type="text" name="secondLastName"  placeholder="Segundo apellido">
+            </div>
+            <div class="div-item-email">
+                <input class="item-type1" type="email" name="email" placeholder="Mi correo@misena.edu.co"  pattern="+@[misena.edu.co]" >
+            </div>
+            <div class="div-item-ageAndCode">
+                <input class="item-type1" name="age" type="text" placeholder="Edad" >
+                <input class="item-type1" type="text" name="program"  placeholder="Nombre de tu programa">
+            </div>
+            <div class="div-item-password">
+                <input class="item-type1" type="password" name="password"  placeholder="Contraseña" >
+                <input class="item-type1" type="password" name="confirmPassword" placeholder="Repetir contraseña" >
+            </div>
+            <div class="form-item-validacion">
+                <div class="item-check">
+                  <%= f.check_box :paid, {:class =>"form--validacion", :required => true} %>
+                    <label for="Deacuerdo"> Estoy de acuerdo con los  <%= link_to "terminos y condiciones",'https://log-book-landing.vercel.app/terminos'%></label>
+                </div>
+            </div>
+            <div class="div-item-button">
+                <%= f.submit "Registrarse", :class => "algo" %>
+            </div>
+            <div class="div-item-answer">
+            <%= link_to "¿Ya tienes cuenta?", root_path%>
+            </div>
+            </div>
+    <%end%>
+        <div class="item-terms">
+            <%= link_to "Terminos de uso. Politica de privacidad",'https://log-book-landing.vercel.app/terminos'%>
+        </div>
+    </section>

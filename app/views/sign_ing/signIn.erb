@@ -1,0 +1,30 @@
+
+<section class="section-container-form">
+        <form method="post" class="form-container">
+            <div class="form-text">
+                <%= link_to "LogBook", 'https://log-book-landing.vercel.app/'%>
+                <p>¡Bienvenido de vuelta!</p>
+            </div>
+            <div class="form--user-date">
+                <input name="user" type="text" placeholder="Usuario" class="form--user" required>
+                <input name="password" type="password" placeholder="Contraseña" class="form--user" required>
+            </div>
+            <div class="form-container-validacion">
+                <div class="item-check">
+                    <input type="checkbox" class="form--validacion" id="validar">
+                    <label for="validar"> Recuerdame</label>
+                </div>
+                <div class="item-recover">
+                    <%= link_to "¿Olvidaste tu contraseña?", '/recuperar'%>
+                </div>
+            </div>
+            <div class="form-container-submit">
+                <input type="submit" value="Ingresar" class="form--submit sub1">
+                <%= link_to "Registrarse", 'usuarios/new', :class => 'form--submit sub2'%>
+            </div>
+
+        </form>
+        <div class="item-terms">
+           <%= link_to "Terminos de uso. Politica de privacidad",'https://log-book-landing.vercel.app/terminos'%>
+        </div>
+    </section>
