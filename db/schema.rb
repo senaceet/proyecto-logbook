@@ -13,14 +13,14 @@
 ActiveRecord::Schema.define(version: 2020_07_25_231512) do
 
   create_table "usuarios", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.string "nombre_usuario", limit: 30, null: false
+    t.string "nombre_usuario", limit: 30, default: ""
     t.string "segundo_nombre", limit: 30
-    t.string "primer_apellido", limit: 30, null: false
+    t.string "primer_apellido", limit: 30
     t.string "segundo_apellido", limit: 30
-    t.string "correo_electronico", limit: 100, null: false
-    t.integer "edad", limit: 2, null: false
-    t.string "contraseña", null: false
-    t.integer "telefono_usuario", null: false
+    t.string "correo_electronico", limit: 100
+    t.integer "edad", limit: 2
+    t.string "contraseña"
+    t.integer "telefono_usuario"
     t.string "foto"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

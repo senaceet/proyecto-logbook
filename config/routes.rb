@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   
   get 'recuperar', to: 'recover_account#recover'
   get 'dashboard', to: 'dashboard#dash'
+
+  get 'resultados', to: 'usuarios#ver'
 end
